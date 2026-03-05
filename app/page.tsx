@@ -34,7 +34,15 @@ export default function Home() {
               className="block group"
             >
               <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-100">
-                {post.coverImage && (
+                {post.coverImage ? (
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={post.coverImage} 
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ) : (
                   <div className="h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
                     <span className="text-4xl">📝</span>
                   </div>

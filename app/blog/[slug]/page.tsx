@@ -1,5 +1,7 @@
 import { getPostData, getAllPostSlugs } from '@/lib/posts'
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export async function generateStaticParams() {
   const slugs = getAllPostSlugs()
@@ -27,6 +29,15 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           <p className="text-xl text-gray-600">
             {postData.description}
           </p>
+        )}
+        {postData.coverImage && (
+          <div className="mt-6 rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src={postData.coverImage} 
+              alt={postData.title}
+              className="w-full h-auto object-cover"
+            />
+          </div>
         )}
       </header>
 
