@@ -87,3 +87,27 @@ body {
   white-space: nowrap;
   font-size: 0.75rem;
 }
+
+/* 目录/锚点链接样式 */
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  scroll-margin-top: 2rem;
+}
+
+.prose h1:hover .header-anchor,
+.prose h2:hover .header-anchor,
+.prose h3:hover .header-anchor,
+.prose h4:hover .header-anchor,
+.prose h5:hover .header-anchor,
+.prose h6:hover .header-anchor {
+  opacity: 1;
+}
+
+.header-anchor {
+  float: left;
+  margin-left: -1.5rem;
+  padding-right: 0.5rem;
+  text-decoration: none;
+  opacity: 0;
+  color: #0ea5e9;
+  transition: opacity 0.2s;
+}

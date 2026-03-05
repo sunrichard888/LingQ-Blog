@@ -2,6 +2,10 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
+import { gfmHeadingId } from 'marked-gfm-heading-id'
+
+// 配置 marked 使用标题 ID 插件
+marked.use(gfmHeadingId())
 
 const postsDirectory = path.join(process.cwd(), 'content/posts')
 
