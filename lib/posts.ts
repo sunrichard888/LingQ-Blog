@@ -1,8 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { remark } from 'remark'
-import html from 'remark-html'
+import { marked } from 'marked'
 
 const postsDirectory = path.join(process.cwd(), 'content/posts')
 
@@ -53,11 +52,8 @@ export async function getPostData(slug: string) {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const matterResult = matter(fileContents)
 
-  // 使用 remark 将 Markdown 转换为 HTML
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content)
-  const contentHtml = processedContent.toString()
+  // 使用 marked 将 Markdown 转换为 HTML（支持图片、表格等）
+  const contentHtml = await marked(matterResult.content)
 
   return {
     slug,
