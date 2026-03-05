@@ -50,11 +50,40 @@ body {
   color: #24292f;
 }
 
-.prose .mermaid {
+/* Mermaid 图表 - 使用等宽字体确保对齐 */
+.prose .mermaid,
+.prose pre code.language-mermaid {
+  display: block;
   background: #ffffff;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
   margin: 1.5rem 0;
   text-align: center;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  white-space: pre;
+  color: #24292f;
+}
+
+/* ASCII 艺术图/树状图 - 使用等宽字体 */
+.prose pre {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* 表格中的树状符号保持对齐 */
+.prose td, .prose th {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.prose td code, .prose th code {
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  font-size: 0.75rem;
 }
