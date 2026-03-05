@@ -48,5 +48,3 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     </article>
   )
 }
-
-import Link from 'next/link'
