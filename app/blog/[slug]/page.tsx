@@ -42,7 +42,20 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       </header>
 
       <div 
-        className="prose prose-lg max-w-none"
+        className="prose prose-slate prose-lg max-w-none
+          prose-headings:font-bold prose-headings:text-gray-900
+          prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
+          prose-p:text-gray-700 prose-p:leading-relaxed
+          prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+          prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:italic prose-blockquote:text-gray-600
+          prose-code:text-gray-800 prose-code:bg-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+          prose-pre:bg-gray-50 prose-pre:border prose-pre:border-gray-200
+          prose-img:rounded-lg prose-img:shadow-md
+          prose-table:border prose-table:border-collapse
+          prose-th:border prose-th:bg-gray-50 prose-th:p-2
+          prose-td:border prose-td:p-2
+          prose-ul:list-disc prose-ol:list-decimal
+          prose-li:my-1"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
     </article>
