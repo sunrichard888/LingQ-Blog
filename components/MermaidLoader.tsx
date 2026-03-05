@@ -20,22 +20,29 @@ export default function MermaidLoader() {
         
         // 渲染所有 mermaid 图表
         setTimeout(() => {
-          const elements = document.querySelectorAll('.language-mermaid')
-          elements.forEach((el, index) => {
+          const elements = document.querySelectorAll('pre code.language-mermaid')
+          elements.forEach((el) => {
             const container = document.createElement('div')
             container.className = 'mermaid-render my-6 p-4 bg-white rounded-lg border border-gray-200 overflow-x-auto'
             container.style.minWidth = '100%'
             
+            // 获取原始代码（不转义）
             const code = el.textContent || ''
-            container.setAttribute('data-mermaid', code)
             
-            el.parentNode?.parentNode?.replaceChild(container, el.parentNode)
+            // 替换 pre 标签
+            const preEl = el.parentElement
+            preEl?.parentNode?.replaceChild(container, preEl)
+            
+            // 设置 mermaid 属性
+            container.innerHTML = code
           })
           
           // 重新初始化
-          ;(window as any).mermaid.run({
-            nodes: document.querySelectorAll('.mermaid-render'),
-          })
+          setTimeout(() => {
+            ;(window as any).mermaid.run({
+              nodes: document.querySelectorAll('.mermaid-render'),
+            })
+          }, 200)
         }, 100)
       }
     }
