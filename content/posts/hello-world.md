@@ -2,7 +2,7 @@
 title: "你好，世界！"
 date: "2026-03-04"
 description: "这是我的第一篇博客文章，欢迎来到 LingQ Blog！"
-coverImage: "/images/hello-world.jpg"
+coverImage: "/images/hello-world-cover.svg"
 ---
 
 # 你好，世界！👋

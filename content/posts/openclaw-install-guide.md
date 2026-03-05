@@ -2,7 +2,7 @@
 title: "OpenClaw 完整安装指南 2026"
 date: "2026-03-05"
 description: "从零基础到生产部署，涵盖 Windows 11、腾讯云 VPS、国产模型配置、热门 Skills、多 Agent 和飞书集成"
-coverImage: "/images/openclaw-install.jpg"
+coverImage: "/images/openclaw-install-cover.svg"
 tags: ["OpenClaw", "AI", "教程", "部署"]
 ---
 

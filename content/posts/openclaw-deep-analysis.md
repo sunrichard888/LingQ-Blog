@@ -2,7 +2,7 @@
 title: "OpenClaw 深度分析：2026 年，个人 AI 助手的「龙虾革命」"
 date: "2026-03-04"
 description: "当所有人都在谈论大模型时，OpenClaw 选择把 AI 真正装进你的生活。深度解析这个被称为「龙虾」的开源项目如何改变人们对 AI 助手的认知。"
-coverImage: "/images/openclaw-analysis.jpg"
+coverImage: "/images/openclaw-analysis-cover.svg"
 tags: ["AI", "OpenClaw", "开源", "自动化"]
 ---
 

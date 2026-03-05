@@ -29,13 +29,14 @@ export function getSortedPostsData() {
       }
     })
 
-  // 按日期排序
+  // 按日期排序（新文章在前），日期相同按标题字母顺序
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1
-    } else {
-      return -1
+    // 首先按日期排序
+    if (a.date !== b.date) {
+      return a.date < b.date ? 1 : -1
     }
+    // 日期相同按标题排序（确保顺序稳定）
+    return a.title.localeCompare(b.title, 'zh-Hans-CN', { sensitivity: 'base' })
   })
 }
 

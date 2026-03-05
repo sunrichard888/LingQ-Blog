@@ -1,0 +1,69 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="50%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#fef3c7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="#ffffff" opacity="0.15"/>
+  <circle cx="1100" cy="530" r="250" fill="#ffffff" opacity="0.15"/>
+  <circle cx="600" cy="315" r="150" fill="#ffffff" opacity="0.1"/>
+  
+  <!-- Confetti -->
+  <circle cx="200" cy="150" r="8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="300" cy="200" r="6" fill="#ffffff" opacity="0.5"/>
+  <circle cx="900" cy="180" r="10" fill="#ffffff" opacity="0.6"/>
+  <circle cx="1000" cy="250" r="7" fill="#ffffff" opacity="0.5"/>
+  <circle cx="250" cy="450" r="9" fill="#ffffff" opacity="0.5"/>
+  <circle cx="950" cy="480" r="8" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Main icon -->
+  <g transform="translate(600, 180)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="90" fill="rgba(255,255,255,0.25)"/>
+    <text x="0" y="35" text-anchor="middle" font-size="100">👋</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="320" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="url(#title)" filter="url(#shadow)">你好，世界！</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#ffffff" letter-spacing="4" font-weight="300">HELLO WORLD</text>
+  
+  <!-- Decorative line -->
+  <line x1="350" y1="410" x2="850" y2="410" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Blog info -->
+  <text x="600" y="460" text-anchor="middle" font-family="system-ui" font-size="18" fill="#ffffff" font-weight="500">LingQ Blog · 2026-03-04</text>
+  
+  <!-- Bottom decoration -->
+  <g transform="translate(600, 540)">
+    <circle cx="0" cy="0" r="10" fill="#ffffff" opacity="0.4"/>
+    <circle cx="-30" cy="0" r="6" fill="#ffffff" opacity="0.3"/>
+    <circle cx="30" cy="0" r="6" fill="#ffffff" opacity="0.3"/>
+    <circle cx="-60" cy="0" r="4" fill="#ffffff" opacity="0.2"/>
+    <circle cx="60" cy="0" r="4" fill="#ffffff" opacity="0.2"/>
+  </g>
+  
+  <!-- Footer -->
+  <text x="600" y="590" text-anchor="middle" font-family="system-ui" font-size="14" fill="rgba(255,255,255,0.7)" letter-spacing="2">欢迎来到我的博客 · 分享技术与生活</text>
+</svg>
