@@ -17,16 +17,10 @@ export default function Profile() {
       color: 'hover:bg-blue-50'
     },
     {
-      name: 'Gmail',
+      name: 'Email',
       url: 'mailto:sun.richard888@gmail.com',
-      icon: '/icons/social/gmail.svg',
+      icon: '/icons/social/email.svg',
       color: 'hover:bg-red-50'
-    },
-    {
-      name: '哔哩哔哩',
-      url: '#',
-      icon: '/icons/social/bilibili.svg',
-      color: 'hover:bg-blue-50'
     },
     {
       name: '抖音',
