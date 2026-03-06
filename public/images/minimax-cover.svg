@@ -1,0 +1,65 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="50%" style="stop-color:#2d1b4e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 金钱符号背景装饰 -->
+  <g fill="rgba(255,215,0,0.05)" font-family="monospace" font-size="40">
+    <text x="100" y="100">$</text>
+    <text x="200" y="150">¥</text>
+    <text x="900" y="200">$</text>
+    <text x="1000" y="500">¥</text>
+    <text x="500" y="550">$</text>
+  </g>
+  
+  <!-- 上升箭头/曲线 -->
+  <path d="M 100 500 L 200 450 L 300 480 L 400 350 L 500 380 L 600 250 L 700 280 L 800 150" 
+        fill="none" stroke="rgba(255,215,0,0.3)" stroke-width="3" stroke-dasharray="10,5"/>
+  
+  <!-- 主标题 -->
+  <text x="80" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" filter="url(#glow)">MiniMax 创始人</text>
+  <text x="80" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="bold" fill="#ffd700" filter="url(#glow)">78 亿美元身价</text>
+  
+  <!-- 分隔线 -->
+  <line x1="80" y1="290" x2="500" y2="290" stroke="#ffd700" stroke-width="4"/>
+  
+  <!-- 副标题 -->
+  <text x="80" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" fill="#cccccc">中国 AI 的资本狂欢</text>
+  
+  <!-- 关键数据框 -->
+  <rect x="80" y="380" width="500" height="180" fill="rgba(255,215,0,0.08)" rx="15" stroke="rgba(255,215,0,0.3)" stroke-width="2"/>
+  
+  <text x="110" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#ffd700">💰 市值</text>
+  <text x="110" y="465" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">超 3000 亿港元</text>
+  
+  <text x="350" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#ffd700">📈 营收增长</text>
+  <text x="350" y="465" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">+158.9%</text>
+  
+  <text x="110" y="515" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#ffd700">⏱️ 成立时长</text>
+  <text x="110" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">仅 4 年</text>
+  
+  <text x="350" y="515" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#ffd700">🌍 国际收入</text>
+  <text x="350" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">超 70%</text>
+  
+  <!-- 作者信息 -->
+  <text x="1120" y="590" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#8888aa" text-anchor="end">🚀 乔叔</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="950" cy="150" r="60" fill="none" stroke="rgba(255,215,0,0.2)" stroke-width="2"/>
+  <circle cx="950" cy="150" r="100" fill="none" stroke="rgba(255,215,0,0.1)" stroke-width="2"/>
+  <circle cx="950" cy="150" r="140" fill="none" stroke="rgba(255,215,0,0.05)" stroke-width="2"/>
+</svg>

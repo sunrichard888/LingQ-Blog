@@ -1,0 +1,48 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1c3f"/>
+      <stop offset="100%" style="stop-color:#1a3a6e"/>
+    </linearGradient>
+    <!-- 用 conic-gradient 模拟饼图 -->
+    <style>
+      .pie {
+        background: conic-gradient(#4da6ff 0% 67.2%, #ffd700 67.2% 100%);
+        border-radius: 50%;
+      }
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">MiniMax 收入结构（2025 年）</text>
+  
+  <!-- 饼图 - 使用 foreignObject 嵌入 HTML 实现 conic-gradient -->
+  <foreignObject x="170" y="130" width="300" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="width:300px;height:300px;background:conic-gradient(#4da6ff 0% 67.2%, #ffd700 67.2% 100%);border-radius:50%;position:relative;">
+      <!-- 中心圆洞形成环形 -->
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120px;height:120px;background:#1a3a6e;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;">
+        <span style="color:#ffffff;font-family:sans-serif;font-size:14px;">总收入</span>
+        <span style="color:#ffffff;font-family:sans-serif;font-size:20px;font-weight:bold;">7904 万$</span>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- 图例 -->
+  <rect x="520" y="220" width="24" height="24" fill="#4da6ff" rx="4"/>
+  <text x="555" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#ffffff">AI 原生产品订阅</text>
+  <text x="555" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cccccc">5308 万美元 (67.2%)</text>
+  <text x="555" y="280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#888888">同比增长 143%</text>
+  
+  <rect x="520" y="310" width="24" height="24" fill="#ffd700" rx="4"/>
+  <text x="555" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#ffffff">开放平台与企业服务</text>
+  <text x="555" y="352" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cccccc">2596 万美元 (32.8%)</text>
+  <text x="555" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#888888">同比增长 197.8%</text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#888888" text-anchor="middle">🌍 国际收入占比超 70%</text>
+  <text x="400" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#888888" text-anchor="middle">📊 2026 年 2 月 ARR 已超 1.5 亿美元</text>
+</svg>
