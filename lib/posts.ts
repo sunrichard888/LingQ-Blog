@@ -29,14 +29,18 @@ export function getSortedPostsData() {
       }
     })
 
-  // 按日期排序（新文章在前），日期相同按标题字母顺序
+  // 按日期排序（新文章在前），日期相同按文件修改时间倒序
   return allPostsData.sort((a, b) => {
-    // 首先按日期排序
+    // 首先按日期字符串倒序排序（新日期在前）
     if (a.date !== b.date) {
-      return a.date < b.date ? 1 : -1
+      return b.date.localeCompare(a.date)
     }
-    // 日期相同按标题排序（确保顺序稳定）
-    return a.title.localeCompare(b.title, 'zh-Hans-CN', { sensitivity: 'base' })
+    // 日期相同，按文件修改时间倒序（新修改的在前）
+    const fullPathA = path.join(postsDirectory, `${a.slug}.md`)
+    const fullPathB = path.join(postsDirectory, `${b.slug}.md`)
+    const statA = fs.statSync(fullPathA)
+    const statB = fs.statSync(fullPathB)
+    return statB.mtimeMs - statA.mtimeMs
   })
 }
 
