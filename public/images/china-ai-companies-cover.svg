@@ -1,0 +1,53 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="50%" style="stop-color:#1a3a5c"/>
+      <stop offset="100%" style="stop-color:#0d2137"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 装饰性中国地图轮廓简化版 -->
+  <path d="M 800 150 Q 900 200 950 300 Q 980 400 900 450 Q 800 480 700 420 Q 650 350 700 250 Q 730 180 800 150" 
+        fill="none" stroke="rgba(255,215,0,0.1)" stroke-width="2"/>
+  
+  <!-- 主标题 -->
+  <text x="80" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="bold" fill="#ffffff" filter="url(#glow)">别只盯着 DeepSeek</text>
+  <text x="80" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="bold" fill="#ffd700" filter="url(#glow)">中国还有 5 家 AI 公司值得关注</text>
+  
+  <!-- 分隔线 -->
+  <line x1="80" y1="290" x2="600" y2="290" stroke="#ffd700" stroke-width="4"/>
+  
+  <!-- 副标题 -->
+  <text x="80" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" fill="#cccccc">投资视角深度分析</text>
+  
+  <!-- 关键数据框 -->
+  <rect x="80" y="380" width="520" height="170" fill="rgba(255,215,0,0.08)" rx="15" stroke="rgba(255,215,0,0.3)" stroke-width="2"/>
+  
+  <text x="110" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#ffd700">💰 AI 六小虎总估值</text>
+  <text x="110" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">超 1 万亿人民币</text>
+  
+  <text x="350" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#ffd700">📈 2026 年融资</text>
+  <text x="350" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">超 200 亿元</text>
+  
+  <text x="110" y="520" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#888888">🚀 2 家已上市 | 1 家冲刺 IPO | 2 家未上市</text>
+  
+  <!-- 作者信息 -->
+  <text x="1120" y="590" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#8888aa" text-anchor="end">🚀 乔叔</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="950" cy="150" r="80" fill="none" stroke="rgba(255,215,0,0.15)" stroke-width="2"/>
+  <circle cx="950" cy="150" r="120" fill="none" stroke="rgba(255,215,0,0.08)" stroke-width="2"/>
+  <text x="1050" y="120" font-family="monospace" font-size="20" fill="rgba(255,215,0,0.3)">&lt;AI&gt;</text>
+  <text x="1050" y="520" font-family="monospace" font-size="20" fill="rgba(255,215,0,0.3)">&lt;/CN&gt;</text>
+</svg>
