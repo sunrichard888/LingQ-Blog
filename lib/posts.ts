@@ -29,30 +29,10 @@ export function getSortedPostsData() {
       }
     })
 
-  // 按日期排序（新文章在前）
+  // 按文件修改时间排序（新修改的在前，精确到毫秒）
   return allPostsData.sort((a, b) => {
-    // 首先尝试用 datetime 字段（包含时分秒）
     const fullPathA = path.join(postsDirectory, `${a.slug}.md`)
     const fullPathB = path.join(postsDirectory, `${b.slug}.md`)
-    const fileContentsA = fs.readFileSync(fullPathA, 'utf8')
-    const fileContentsB = fs.readFileSync(fullPathB, 'utf8')
-    const matterA = matter(fileContentsA)
-    const matterB = matter(fileContentsB)
-    
-    const datetimeA = matterA.data.datetime
-    const datetimeB = matterB.data.datetime
-    
-    // 如果有 datetime 字段，优先使用
-    if (datetimeA && datetimeB && datetimeA !== datetimeB) {
-      return datetimeB.localeCompare(datetimeA)
-    }
-    
-    // 否则按 date 字段排序
-    if (a.date !== b.date) {
-      return b.date.localeCompare(a.date)
-    }
-    
-    // 日期相同，按文件修改时间倒序（新修改的在前）
     const statA = fs.statSync(fullPathA)
     const statB = fs.statSync(fullPathB)
     return statB.mtimeMs - statA.mtimeMs
