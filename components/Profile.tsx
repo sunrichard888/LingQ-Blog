@@ -17,9 +17,9 @@ export default function Profile() {
       color: 'hover:bg-blue-50'
     },
     {
-      name: 'Email',
+      name: 'Gmail',
       url: 'mailto:sun.richard888@gmail.com',
-      icon: '/icons/social/email.svg',
+      icon: '/icons/social/gmail.svg',
       color: 'hover:bg-red-50'
     },
     {
