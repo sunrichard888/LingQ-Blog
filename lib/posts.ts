@@ -3,11 +3,27 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import { gfmHeadingId } from 'marked-gfm-heading-id'
+import { execSync } from 'child_process'
 
 // 配置 marked 使用标题 ID 插件
 marked.use(gfmHeadingId())
 
 const postsDirectory = path.join(process.cwd(), 'content/posts')
+
+// 获取文件的 Git 提交时间（ Unix 时间戳）
+function getGitCommitTime(filePath: string): number {
+  try {
+    const result = execSync(`git log -1 --format=%ct "${filePath}"`, {
+      encoding: 'utf-8',
+      cwd: process.cwd()
+    }).trim()
+    return parseInt(result, 10) * 1000 // 转换为毫秒
+  } catch (error) {
+    // 如果不是 Git 仓库，回退到文件修改时间
+    const stat = fs.statSync(filePath)
+    return stat.mtimeMs
+  }
+}
 
 export function getSortedPostsData() {
   // 获取所有文章
@@ -26,16 +42,13 @@ export function getSortedPostsData() {
         date: matterResult.data.date || '未知日期',
         description: matterResult.data.description || '',
         coverImage: matterResult.data.coverImage || null,
+        commitTime: getGitCommitTime(fullPath),
       }
     })
 
-  // 按文件修改时间排序（新修改的在前，精确到毫秒）
+  // 按 Git 提交时间排序（新提交在前，精确到秒）
   return allPostsData.sort((a, b) => {
-    const fullPathA = path.join(postsDirectory, `${a.slug}.md`)
-    const fullPathB = path.join(postsDirectory, `${b.slug}.md`)
-    const statA = fs.statSync(fullPathA)
-    const statB = fs.statSync(fullPathB)
-    return statB.mtimeMs - statA.mtimeMs
+    return b.commitTime - a.commitTime
   })
 }
 
@@ -68,3 +81,5 @@ export async function getPostData(slug: string) {
     contentHtml,
   }
 }
+
+export type PostData = ReturnType<typeof getPostData> extends Promise<infer T> ? T : never
