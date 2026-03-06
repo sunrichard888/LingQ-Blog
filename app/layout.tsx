@@ -5,6 +5,9 @@ import dynamic from 'next/dynamic'
 const MermaidLoader = dynamic(() => import('@/components/MermaidLoader'), {
   ssr: false,
 })
+const Logo = dynamic(() => import('@/components/Logo'), {
+  ssr: false,
+})
 
 export const metadata: Metadata = {
   title: 'LingQ Blog - 乔的博客',
@@ -22,9 +25,7 @@ export default function RootLayout({
         <MermaidLoader />
         <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
           <nav className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="/" className="text-xl font-bold text-gray-900 hover:text-primary-600 transition-colors">
-              LingQ Blog
-            </a>
+            <Logo />
             <div className="flex gap-6">
               <a href="/blog" className="text-gray-600 hover:text-primary-600 transition-colors">
                 博客
