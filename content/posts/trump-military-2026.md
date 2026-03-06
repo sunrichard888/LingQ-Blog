@@ -1,6 +1,7 @@
 ---
 title: "特朗普 2026 全球斩首行动：他要解决什么问题？"
 date: "2026-03-06"
+datetime: "2026-03-06T21:06:00+08:00"
 description: "Operation Epic Fury 打击伊朗，Operation Absolute Resolve 抓捕马杜罗。特朗普四处军事行动，表面是反恐，实际是打给选民看。"
 coverImage: "/images/trump-military-cover.svg"
 tags: ["特朗普", "军事分析", "国际政治", "美国外交", "地缘政治"]
