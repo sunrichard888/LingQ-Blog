@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 深色背景渐变 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1f3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 红色渐变 -->
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff3333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 蓝色渐变 -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3366ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0033cc;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 发光效果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 阴影 -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- 世界地图轮廓（简化） -->
+  <g opacity="0.15" stroke="#4488ff" stroke-width="1" fill="none">
+    <!-- 北美 -->
+    <path d="M150,180 L280,160 L320,200 L300,280 L220,300 L160,260 Z" />
+    <!-- 南美 -->
+    <path d="M280,320 L340,340 L360,420 L320,500 L280,450 Z" />
+    <!-- 欧洲 -->
+    <path d="M520,160 L620,150 L640,200 L600,240 L540,230 Z" />
+    <!-- 非洲 -->
+    <path d="M540,260 L640,260 L680,340 L620,450 L560,400 Z" />
+    <!-- 亚洲 -->
+    <path d="M660,160 L850,150 L950,200 L920,320 L800,350 L700,300 Z" />
+    <!-- 中东区域突出 -->
+    <ellipse cx="720" cy="280" rx="60" ry="40" fill="#ff3333" opacity="0.3" filter="url(#glow)"/>
+    <!-- 委内瑞拉区域突出 -->
+    <ellipse cx="310" cy="380" rx="40" ry="30" fill="#ff3333" opacity="0.3" filter="url(#glow)"/>
+  </g>
+  
+  <!-- 网格线（科技感） -->
+  <g stroke="#3366ff" stroke-width="0.5" opacity="0.2">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  
+  <!-- 装饰性圆圈（雷达效果） -->
+  <circle cx="720" cy="280" r="80" stroke="#ff3333" stroke-width="1" fill="none" opacity="0.3"/>
+  <circle cx="720" cy="280" r="120" stroke="#ff3333" stroke-width="1" fill="none" opacity="0.2"/>
+  <circle cx="310" cy="380" r="60" stroke="#ff3333" stroke-width="1" fill="none" opacity="0.3"/>
+  <circle cx="310" cy="380" r="90" stroke="#ff3333" stroke-width="1" fill="none" opacity="0.2"/>
+  
+  <!-- 主标题 -->
+  <text x="600" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="52" fill="#ffffff" filter="url(#shadow)">
+    特朗普 2026 全球斩首行动
+  </text>
+  
+  <!-- 副标题装饰线 -->
+  <line x1="300" y1="160" x2="900" y2="160" stroke="url(#redGradient)" stroke-width="3" opacity="0.8"/>
+  
+  <!-- 行动代号标签 -->
+  <g font-family="Arial, sans-serif">
+    <!-- Operation Epic Fury -->
+    <rect x="650" y="250" width="280" height="50" rx="8" fill="url(#redGradient)" opacity="0.9" filter="url(#glow)"/>
+    <text x="790" y="282" text-anchor="middle" font-weight="bold" font-size="18" fill="#ffffff">
+      OPERATION EPIC FURY
+    </text>
+    <text x="790" y="305" text-anchor="middle" font-size="14" fill="#ffcccc">
+      伊朗 · Iran
+    </text>
+    
+    <!-- Operation Absolute Resolve -->
+    <rect x="220" y="350" width="280" height="50" rx="8" fill="url(#blueGradient)" opacity="0.9" filter="url(#glow)"/>
+    <text x="360" y="382" text-anchor="middle" font-weight="bold" font-size="18" fill="#ffffff">
+      OPERATION ABSOLUTE RESOLVE
+    </text>
+    <text x="360" y="405" text-anchor="middle" font-size="14" fill="#ccccff">
+      委内瑞拉 · Venezuela
+    </text>
+  </g>
+  
+  <!-- 连接箭头 -->
+  <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4">
+    <path d="M600,180 L720,260" marker-end="url(#arrowhead)"/>
+    <path d="M600,180 L310,340" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- 底部装饰条 -->
+  <rect x="0" y="580" width="1200" height="50" fill="#0a0e1a" opacity="0.8"/>
+  <line x1="0" y1="580" x2="1200" y2="580" stroke="url(#redGradient)" stroke-width="2"/>
+  
+  <!-- 底部文字 -->
+  <text x="600" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#888888">
+    深度分析 · 地缘政治 · 军事战略
+  </text>
+  
+  <!-- 装饰性图标：美国国旗元素 -->
+  <g transform="translate(80, 590)">
+    <rect width="30" height="18" fill="#cc0000"/>
+    <rect width="30" height="6" y="6" fill="#ffffff"/>
+    <rect width="30" height="6" y="12" fill="#cc0000"/>
+  </g>
+  
+  <!-- 装饰性图标：目标标记 -->
+  <circle cx="720" cy="280" r="8" fill="#ff3333" filter="url(#glow)"/>
+  <circle cx="310" cy="380" r="8" fill="#3366ff" filter="url(#glow)"/>
+  
+  <!-- 右上角装饰 -->
+  <g opacity="0.3">
+    <polygon points="1050,50 1150,50 1150,150" fill="url(#redGradient)"/>
+    <polygon points="1050,50 1050,150 1150,150" fill="url(#blueGradient)"/>
+  </g>
+</svg>
