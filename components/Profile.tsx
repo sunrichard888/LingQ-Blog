@@ -4,8 +4,8 @@ import {
   FaGithub, 
   FaTwitter, 
   FaEnvelope,
-  FaXiaohongshu,
-  FaTiktok 
+  FaTiktok,
+  FaInstagram 
 } from 'react-icons/fa6'
 
 export default function Profile() {
@@ -31,7 +31,7 @@ export default function Profile() {
     {
       name: '小红书',
       url: '#',
-      icon: FaXiaohongshu,
+      icon: FaInstagram,
       color: 'hover:text-red-600'
     },
     {
