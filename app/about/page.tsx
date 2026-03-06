@@ -23,9 +23,9 @@ export default function AboutPage() {
           如果你有任何问题或想法，欢迎通过以下方式联系我：
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-2 mt-4">
-          <li>Email: your-email@example.com</li>
-          <li>GitHub: <a href="https://github.com" className="text-primary-600 hover:underline">@your-username</a></li>
-          <li>Twitter: <a href="https://twitter.com" className="text-primary-600 hover:underline">@your-username</a></li>
+          <li>Email: <a href="mailto:sun.richard888@gmail.com" className="text-primary-600 hover:underline">sun.richard888@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/sunrichard888" className="text-primary-600 hover:underline">@sunrichard888</a></li>
+          <li>Twitter: <a href="https://twitter.com/richard91261848" className="text-primary-600 hover:underline">@richard91261848</a></li>
         </ul>
       </div>
     </div>
