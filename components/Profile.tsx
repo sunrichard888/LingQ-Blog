@@ -1,44 +1,38 @@
 'use client'
 
-import { 
-  FaGithub, 
-  FaTwitter, 
-  FaEnvelope,
-  FaTiktok,
-  FaInstagram 
-} from 'react-icons/fa6'
+import Image from 'next/image'
 
 export default function Profile() {
   const socialLinks = [
     {
       name: 'GitHub',
       url: 'https://github.com/sunrichard888',
-      icon: FaGithub,
-      color: 'hover:text-gray-900'
+      icon: '/icons/social/github.svg',
+      color: 'hover:bg-gray-100'
     },
     {
       name: 'Twitter',
       url: 'https://twitter.com/richard91261848',
-      icon: FaTwitter,
-      color: 'hover:text-blue-400'
+      icon: '/icons/social/twitter.svg',
+      color: 'hover:bg-blue-50'
     },
     {
       name: 'Email',
       url: 'mailto:sun.richard888@gmail.com',
-      icon: FaEnvelope,
-      color: 'hover:text-red-500'
+      icon: '/icons/social/email.svg',
+      color: 'hover:bg-red-50'
     },
     {
       name: '小红书',
       url: '#',
-      icon: FaInstagram,
-      color: 'hover:text-red-600'
+      icon: '/icons/social/xiaohongshu.svg',
+      color: 'hover:bg-red-50'
     },
     {
       name: '抖音',
       url: '#',
-      icon: FaTiktok,
-      color: 'hover:text-gray-800'
+      icon: '/icons/social/tiktok.svg',
+      color: 'hover:bg-gray-100'
     }
   ]
 
@@ -62,21 +56,24 @@ export default function Profile() {
 
       {/* 社交媒体链接 */}
       <div className="flex justify-center gap-4">
-        {socialLinks.map((link) => {
-          const Icon = link.icon
-          return (
-            <a
-              key={link.name}
-              href={link.url}
-              target={link.url.startsWith('http') ? '_blank' : undefined}
-              rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className={`w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 transition-all duration-300 hover:shadow-md hover:-translate-y-1 ${link.color}`}
-              title={link.name}
-            >
-              <Icon className="w-5 h-5" />
-            </a>
-          )
-        })}
+        {socialLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.url}
+            target={link.url.startsWith('http') && !link.url.startsWith('mailto') ? '_blank' : undefined}
+            rel={link.url.startsWith('http') && !link.url.startsWith('mailto') ? 'noopener noreferrer' : undefined}
+            className={`w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 transition-all duration-300 hover:shadow-md hover:-translate-y-1 ${link.color}`}
+            title={link.name}
+          >
+            <Image
+              src={link.icon}
+              alt={link.name}
+              width={24}
+              height={24}
+              className="w-6 h-6"
+            />
+          </a>
+        ))}
       </div>
 
       {/* 版权信息 */}
