@@ -45,9 +45,16 @@ export default function MermaidLoader() {
 
     const renderCharts = () => {
       const elements = document.querySelectorAll('pre code.language-mermaid')
+      if (elements.length === 0) return
+      
       elements.forEach((el) => {
         const preEl = el.parentElement
         if (!preEl) return
+
+        // 检查是否已经渲染过
+        if (preEl.previousElementSibling?.classList.contains('mermaid-render')) {
+          return
+        }
 
         // 创建容器
         const container = document.createElement('div')
@@ -82,8 +89,29 @@ export default function MermaidLoader() {
       })
     }
 
-    // 延迟渲染，确保 DOM 已准备好
-    setTimeout(renderCharts, 300)
+    // 使用 requestAnimationFrame 确保在下一帧渲染，比 setTimeout 更可靠
+    requestAnimationFrame(() => {
+      requestAnimationFrame(renderCharts)
+    })
+    
+    // 监听 DOM 加载完成（处理动态内容）
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', renderCharts)
+    }
+    
+    // 使用 MutationObserver 监听动态添加的内容
+    const observer = new MutationObserver(() => {
+      renderCharts()
+    })
+    observer.observe(document.body, { 
+      childList: true, 
+      subtree: true 
+    })
+
+    return () => {
+      observer.disconnect()
+      document.removeEventListener('DOMContentLoaded', renderCharts)
+    }
   }, [loaded])
 
   return null
