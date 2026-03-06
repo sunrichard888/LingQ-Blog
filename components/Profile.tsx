@@ -23,10 +23,10 @@ export default function Profile() {
       color: 'hover:bg-red-50'
     },
     {
-      name: '小红书',
+      name: '哔哩哔哩',
       url: '#',
-      icon: '/icons/social/xiaohongshu.svg',
-      color: 'hover:bg-red-50'
+      icon: '/icons/social/bilibili.svg',
+      color: 'hover:bg-blue-50'
     },
     {
       name: '抖音',
