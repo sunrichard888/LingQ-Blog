@@ -1,0 +1,71 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a1a"/>
+      <stop offset="100%" style="stop-color:#2d1b2d"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="url(#bg1)"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">AI 暴露度分级：从 E0 到 E3</text>
+  
+  <!-- 分级图示 -->
+  <!-- E0 完全不暴露 -->
+  <rect x="50" y="80" width="160" height="100" fill="#2d5a2d" rx="8"/>
+  <text x="130" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">E0</text>
+  <text x="130" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#cccccc" text-anchor="middle">完全不暴露</text>
+  <text x="130" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#888888" text-anchor="middle">32% 任务</text>
+  <text x="130" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#666666" text-anchor="middle">水管工、电工</text>
+  
+  <!-- E1 直接暴露 -->
+  <rect x="230" y="80" width="160" height="100" fill="#d4a017" rx="8"/>
+  <text x="310" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" fill="#000000" text-anchor="middle">E1</text>
+  <text x="310" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#333333" text-anchor="middle">直接用 GPT</text>
+  <text x="310" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#333333" text-anchor="middle">10% 任务</text>
+  <text x="310" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#333333" text-anchor="middle">省 50% 时间</text>
+  
+  <!-- E2 工具暴露 -->
+  <rect x="410" y="80" width="160" height="100" fill="#ff8c00" rx="8"/>
+  <text x="490" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">E2</text>
+  <text x="490" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#eeeeee" text-anchor="middle">LLM+ 工具</text>
+  <text x="490" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#cccccc" text-anchor="middle">17% 任务</text>
+  <text x="490" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#aaaaaa" text-anchor="middle">配套软件</text>
+  
+  <!-- E3 视觉暴露 -->
+  <rect x="590" y="80" width="160" height="100" fill="#ff4444" rx="8"/>
+  <text x="670" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">E3</text>
+  <text x="670" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#eeeeee" text-anchor="middle">多模态 +Agent</text>
+  <text x="670" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#cccccc" text-anchor="middle">17% 任务</text>
+  <text x="670" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#aaaaaa" text-anchor="middle">视觉 + 推理</text>
+  
+  <!-- 完全自动化 -->
+  <rect x="200" y="220" width="400" height="80" fill="#8b0000" rx="8" stroke="#ff0000" stroke-width="2"/>
+  <text x="400" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">⚠️ 完全自动化：10%（2023 年 1% → 2026 年 10%）</text>
+  <text x="400" y="280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cccccc" text-anchor="middle">4 倍速增长！翻译、历史学家、销售代表风险最高</text>
+  
+  <!-- 影响范围对比 -->
+  <text x="400" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">📊 AI 影响范围对比</text>
+  
+  <!-- 条形图 -->
+  <rect x="100" y="370" width="600" height="30" fill="#333333" rx="4"/>
+  <rect x="100" y="370" width="60" height="30" fill="#2d5a2d" rx="4"/>
+  <text x="90" y="390" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff" text-anchor="end">ChatGPT</text>
+  <text x="170" y="390" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff">10%</text>
+  
+  <rect x="100" y="410" width="600" height="30" fill="#333333" rx="4"/>
+  <rect x="100" y="410" width="162" height="30" fill="#d4a017" rx="4"/>
+  <text x="90" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff" text-anchor="end">+Agent 工具</text>
+  <text x="272" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff">27%</text>
+  
+  <rect x="100" y="450" width="600" height="30" fill="#333333" rx="4"/>
+  <rect x="100" y="450" width="264" height="30" fill="#ff4444" rx="4"/>
+  <text x="90" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff" text-anchor="end">+ 视觉处理</text>
+  <text x="374" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff">44%</text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="530" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#888888" text-anchor="middle">数据来源：OpenAI 职业暴露度报告 2026</text>
+  <text x="400" y="555" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#888888" text-anchor="middle">E0→E3 暴露度逐级递增，Agent+ 多模态是最大变量</text>
+</svg>

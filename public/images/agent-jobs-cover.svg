@@ -1,0 +1,47 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="50%" style="stop-color:#1a1a3e"/>
+      <stop offset="100%" style="stop-color:#0d1b2a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 机器人手臂剪影 -->
+  <g fill="rgba(255,100,100,0.1)">
+    <circle cx="900" cy="200" r="150"/>
+    <circle cx="900" cy="200" r="120"/>
+    <circle cx="900" cy="200" r="90"/>
+  </g>
+  
+  <!-- 警告符号 -->
+  <path d="M 200 200 L 280 340 L 120 340 Z" fill="none" stroke="#ff6b6b" stroke-width="4" filter="url(#glow)"/>
+  <text x="200" y="310" font-family="monospace" font-size="80" fill="#ff6b6b" text-anchor="middle" font-weight="bold">!</text>
+  
+  <!-- 主标题 -->
+  <text x="80" y="420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" filter="url(#glow)">AI Agent 时代来了</text>
+  <text x="80" y="490" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="bold" fill="#ff6b6b" filter="url(#glow)">哪些岗位最先被替代？</text>
+  
+  <!-- 分隔线 -->
+  <line x1="80" y1="520" x2="500" y2="520" stroke="#ff6b6b" stroke-width="4"/>
+  
+  <!-- 关键数据 -->
+  <text x="80" y="570" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#cccccc">📊 全球 40% 岗位受影响 | 🤖 10% 工作可完全自动化</text>
+  
+  <!-- 作者信息 -->
+  <text x="1120" y="590" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#8888aa" text-anchor="end">🚀 乔叔</text>
+  
+  <!-- 装饰元素 -->
+  <text x="1000" y="100" font-family="monospace" font-size="24" fill="rgba(255,100,100,0.3)">&lt;AI&gt;</text>
+  <text x="1050" y="550" font-family="monospace" font-size="24" fill="rgba(255,100,100,0.3)">&lt;/JOB&gt;</text>
+</svg>

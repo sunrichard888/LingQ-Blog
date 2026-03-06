@@ -1,0 +1,94 @@
+<svg width="800" height="550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="550" fill="url(#bg2)"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">🔴 微软研究：40 种最易被 AI 取代的工作</text>
+  
+  <!-- 高风险 TOP10 -->
+  <text x="50" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold" fill="#ff6b6b">高风险 TOP10</text>
+  
+  <!-- 列表 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">
+    <text x="70" y="100" fill="#ff6b6b">1.</text>
+    <text x="95" y="100" fill="#ffffff">历史学家</text>
+    <rect x="200" y="90" width="280" height="18" fill="#ff6b6b" rx="3"/>
+    <text x="490" y="103" fill="#cccccc" font-size="12">风险指数 ★★★★★</text>
+    
+    <text x="70" y="130" fill="#ff8888">2.</text>
+    <text x="95" y="130" fill="#ffffff">翻译</text>
+    <rect x="200" y="120" width="270" height="18" fill="#ff8888" rx="3"/>
+    <text x="490" y="133" fill="#cccccc" font-size="12">风险指数 ★★★★★</text>
+    
+    <text x="70" y="160" fill="#ff9999">3.</text>
+    <text x="95" y="160" fill="#ffffff">销售代表</text>
+    <rect x="200" y="150" width="260" height="18" fill="#ff9999" rx="3"/>
+    <text x="490" y="163" fill="#cccccc" font-size="12">风险指数 ★★★★☆</text>
+    
+    <text x="70" y="190" fill="#ffaaaa">4.</text>
+    <text x="95" y="190" fill="#ffffff">行政秘书</text>
+    <rect x="200" y="180" width="250" height="18" fill="#ffaaaa" rx="3"/>
+    <text x="490" y="193" fill="#cccccc" font-size="12">风险指数 ★★★★☆</text>
+    
+    <text x="70" y="220" fill="#ffbbbb">5.</text>
+    <text x="95" y="220" fill="#ffffff">会计/审计师</text>
+    <rect x="200" y="210" width="240" height="18" fill="#ffbbbb" rx="3"/>
+    <text x="490" y="223" fill="#cccccc" font-size="12">风险指数 ★★★★☆</text>
+    
+    <text x="70" y="250" fill="#ffcccc">6.</text>
+    <text x="95" y="250" fill="#ffffff">法律助理</text>
+    <rect x="200" y="240" width="230" height="18" fill="#ffcccc" rx="3"/>
+    <text x="490" y="253" fill="#cccccc" font-size="12">风险指数 ★★★★☆</text>
+    
+    <text x="70" y="280" fill="#ffdddd">7.</text>
+    <text x="95" y="280" fill="#ffffff">市场研究分析师</text>
+    <rect x="200" y="270" width="220" height="18" fill="#ffdddd" rx="3"/>
+    <text x="490" y="283" fill="#cccccc" font-size="12">风险指数 ★★★☆☆</text>
+    
+    <text x="70" y="310" fill="#ffeeee">8.</text>
+    <text x="95" y="310" fill="#ffffff">数据录入员</text>
+    <rect x="200" y="300" width="210" height="18" fill="#ffeeee" rx="3"/>
+    <text x="490" y="313" fill="#cccccc" font-size="12">风险指数 ★★★☆☆</text>
+    
+    <text x="70" y="340" fill="#ffffff">9.</text>
+    <text x="95" y="340" fill="#ffffff">客服代表</text>
+    <rect x="200" y="330" width="200" height="18" fill="#ffffff" rx="3"/>
+    <text x="490" y="343" fill="#cccccc" font-size="12">风险指数 ★★★☆☆</text>
+    
+    <text x="70" y="370" fill="#ffffff">10.</text>
+    <text x="95" y="370" fill="#ffffff">初级程序员</text>
+    <rect x="200" y="360" width="190" height="18" fill="#ffffff" rx="3"/>
+    <text x="490" y="373" fill="#cccccc" font-size="12">风险指数 ★★★☆☆</text>
+  </g>
+  
+  <!-- 右侧说明框 -->
+  <rect x="520" y="70" width="260" height="320" fill="rgba(255,100,100,0.1)" rx="10" stroke="rgba(255,100,100,0.3)" stroke-width="2"/>
+  
+  <text x="650" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold" fill="#ff6b6b" text-anchor="middle">⚠️ 共同特征</text>
+  
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cccccc">
+    <text x="540" y="130">✓ 高度重复性任务</text>
+    <text x="540" y="155">✓ 遵从具体指令和规则</text>
+    <text x="540" y="180">✓ 信息处理为主</text>
+    <text x="540" y="205">✓ 不需要复杂人际互动</text>
+    <text x="540" y="230">✓ 工作内容标准化</text>
+    <text x="540" y="255">✓ 可被数字化描述</text>
+  </g>
+  
+  <text x="650" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#ffd700" text-anchor="middle">💡 警示</text>
+  <text x="650" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#888888" text-anchor="middle">警惕那些主要内容是</text>
+  <text x="650" y="345" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#888888" text-anchor="middle">「纠正 AI 错误」的工作</text>
+  <text x="650" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#666666" text-anchor="middle">那是自动化前的最后一步</text>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#888888" text-anchor="middle">数据来源：微软研究院 2025 职业 AI 暴露度报告</text>
+  <text x="400" y="455" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#888888" text-anchor="middle">高 AI 适用性 = 高风险，但不代表立即失业</text>
+  <text x="400" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#888888" text-anchor="middle">完整 40 种职业清单见正文</text>
+</svg>
