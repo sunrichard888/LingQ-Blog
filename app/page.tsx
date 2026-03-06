@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { getSortedPostsData } from '@/lib/posts'
+import Profile from '@/components/Profile'
 
 export default function Home() {
   const allPostsData = getSortedPostsData()
@@ -73,6 +74,11 @@ export default function Home() {
         >
           查看全部文章
         </Link>
+      </section>
+
+      {/* 个人信息 */}
+      <section className="py-16 border-t border-gray-200">
+        <Profile />
       </section>
     </div>
   )
