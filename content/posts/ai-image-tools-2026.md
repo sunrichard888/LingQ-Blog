@@ -26,6 +26,8 @@ tags: ["AI", "生图工具", "Midjourney", "Stable Diffusion", "技术调研"]
 | **Leonardo.ai** | 云服务 | Leonardo.ai | Phoenix/SDXL 微调 | ❌ 闭源 |
 | **Adobe Firefly** | 云服务 | Adobe | Firefly Image 3 | ❌ 闭源 |
 | **Runway** | 云服务 | Runway ML | Gen-4/Gen-4.5 | ❌ 闭源 |
+| **Google Imagen 3** | API/云服务 | Google | Imagen 3 | ❌ 闭源 |
+| **字节即梦 (Dreamina)** | 云服务 | 字节跳动 | 自研模型 | ❌ 闭源 |
 
 ---
 
@@ -332,6 +334,93 @@ tags: ["AI", "生图工具", "Midjourney", "Stable Diffusion", "技术调研"]
 
 ---
 
+### 9️⃣ Google Imagen 3
+
+**画质表现**：
+- 🎯 **真实感**：★★★★☆
+- 🎨 **艺术风格**：★★★☆☆
+- 🔤 **文字渲染**：★★★★★（与 DALL-E 3 相当）
+
+**定价策略**：
+| 方式 | 价格 | 说明 |
+|-----|------|------|
+| ImageFX (免费) | $0 | 有限额度/天 |
+| Vertex AI API | $0.002-0.02/张 | 按量付费 |
+| Google AI Studio | $0-100/月 | 开发者额度 |
+
+**生成速度**：
+- API: ~3-8 秒/张
+- ImageFX Web: ~5-15 秒/张
+- 并发：根据配额
+
+**平台支持**：
+- ✅ ImageFX Web 端
+- ✅ Vertex AI API
+- ✅ Google AI Studio
+- ✅ 集成 Google Workspace（部分）
+- ❌ 无独立移动 App
+
+**商用授权**：
+- Vertex AI 付费用户可商用
+- 需遵守 Google AI 使用政策
+- 企业合规友好（SOC2 等认证）
+
+**独特优势**：
+- 🔤 文字渲染能力强（支持多语言）
+- 🔒 谷歌安全基础设施
+- 🌐 多语言支持好（包括中文）
+- 💼 企业级 SLA 保障
+- 🔗 与谷歌生态集成（Photoshop 插件等）
+
+**劣势**：
+- 🌍 地区限制（中国大陆访问困难）
+- 📉 艺术风格不如 Midjourney 丰富
+
+---
+
+### 🔟 字节即梦（Dreamina）
+
+**画质表现**：
+- 🎯 **真实感**：★★★★☆
+- 🎨 **艺术风格**：★★★★☆
+- 🔤 **文字渲染**：★★★☆☆
+
+**定价策略**（2025-2026）：
+| 套餐 | 价格 | 生成额度 | 特点 |
+|-----|------|---------|------|
+| Free | ¥0 | 每日免费额度 | 基础功能 |
+| Plus | ¥19/月 | 500 张/月 | 个人进阶 |
+| Pro | ¥59/月 | 2000 张/月 | 专业用户 |
+| Enterprise | 定制 | 无限 | 企业 API |
+
+**生成速度**：
+- ~5-15 秒/张
+- 并发：根据套餐
+
+**平台支持**：
+- ✅ Web 端
+- ✅ 移动 App（iOS/Android）
+- ✅ 抖音/剪映集成
+- ✅ API（企业）
+
+**商用授权**：
+- 付费套餐可商用
+- 需遵守字节使用政策
+- 国内企业合规友好
+
+**独特优势**：
+- 🇨🇳 本土化最好（中文理解优秀）
+- 📱 移动端体验佳
+- 🎬 与剪映/抖音生态打通
+- 💰 价格亲民（人民币计费）
+- 🚀 生成速度快（国内服务器）
+
+**劣势**：
+- 🌍 国际知名度低
+- 📚 社区生态不如 SD 丰富
+
+---
+
 ## 📊 三、横向对比分析
 
 ### 性价比排名（2025-2026）
@@ -340,12 +429,14 @@ tags: ["AI", "生图工具", "Midjourney", "Stable Diffusion", "技术调研"]
 |-----|------|-----------|---------|
 | 🥇 | **Flux (本地)** | 9.5/10 | 免费开源，画质顶级 |
 | 🥈 | **Stable Diffusion** | 9.0/10 | 生态丰富，成本可控 |
-| 🥉 | **Ideogram** | 8.5/10 | 文字渲染强，价格亲民 |
-| 4 | **Leonardo.ai** | 8.0/10 | 游戏艺术专精 |
-| 5 | **Midjourney** | 7.5/10 | 画质最好但价格高 |
-| 6 | **DALL-E 3** | 7.0/10 | 理解准确但风格有限 |
-| 7 | **Adobe Firefly** | 7.0/10 | 商用安全但创意有限 |
-| 8 | **Runway** | 6.5/10 | 视频专精，图像非主打 |
+| 🥉 | **字节即梦** | 8.8/10 | 本土化好，价格亲民 |
+| 4 | **Ideogram** | 8.5/10 | 文字渲染强，价格亲民 |
+| 5 | **Google Imagen 3** | 8.0/10 | 企业友好，多语言支持 |
+| 6 | **Leonardo.ai** | 8.0/10 | 游戏艺术专精 |
+| 7 | **Midjourney** | 7.5/10 | 画质最好但价格高 |
+| 8 | **DALL-E 3** | 7.0/10 | 理解准确但风格有限 |
+| 9 | **Adobe Firefly** | 7.0/10 | 商用安全但创意有限 |
+| 10 | **Runway** | 6.5/10 | 视频专精，图像非主打 |
 
 ### 适用场景推荐
 
@@ -359,16 +450,18 @@ tags: ["AI", "生图工具", "Midjourney", "Stable Diffusion", "技术调研"]
 | **企业批量生产** | Stable Diffusion API | fal.ai | 成本可控 |
 | **视频 + 图像** | Runway | - | 视频生成最强 |
 | **快速原型** | DALL-E 3 | Ideogram | 理解准确 |
+| **国内企业/个人** | 字节即梦 | Google Imagen 3 | 本土化/访问便利 |
+| **谷歌生态用户** | Google Imagen 3 | - | Workspace 集成 |
 
 ### 核心能力对比图（文字描述）
 
 ```
-画质真实感：Midjourney ≈ Flux > SD3 > DALL-E 3 > Leonardo > Runway > Firefly > Ideogram
-艺术风格：  Midjourney > Leonardo > SDXL > Flux > Firefly > DALL-E 3 > Runway > Ideogram
-文字渲染：  Ideogram > DALL-E 3 > Midjourney v6 > Flux > SD3 > Leonardo > Firefly > Runway
-生成速度：  Flux API > SD Local > DALL-E 3 > Leonardo > Firefly > Midjourney > Runway > Ideogram
-易用性：    DALL-E 3 > Firefly > Midjourney > Leonardo > Ideogram > Runway > Flux > SD
-成本效益：  SD Local > Flux Open > Ideogram > Leonardo > DALL-E 3 > Firefly > Midjourney > Runway
+画质真实感：Midjourney ≈ Flux > SD3 > DALL-E 3 > Google Imagen 3 > Leonardo > Runway > Firefly > Ideogram ≈ 字节即梦
+艺术风格：  Midjourney > Leonardo > SDXL > Flux > Firefly > DALL-E 3 > Runway > Ideogram > 字节即梦 > Google Imagen 3
+文字渲染：  Ideogram > DALL-E 3 ≈ Google Imagen 3 > Midjourney v6 > Flux > SD3 > Leonardo > Firefly > Runway > 字节即梦
+生成速度：  Flux API > SD Local > DALL-E 3 > Leonardo > Firefly > Midjourney > Runway > Ideogram > Google Imagen 3 > 字节即梦
+易用性：    DALL-E 3 > Firefly > Midjourney > Leonardo > Ideogram > Runway > Flux > SD > 字节即梦 > Google Imagen 3
+成本效益：  SD Local > Flux Open > 字节即梦 > Ideogram > Leonardo > DALL-E 3 > Google Imagen 3 > Firefly > Midjourney > Runway
 ```
 
 ---
@@ -513,5 +606,28 @@ tags: ["AI", "生图工具", "Midjourney", "Stable Diffusion", "技术调研"]
 ---
 
 *报告完*
+
+---
+
+## 📚 数据来源说明
+
+**主要信源**：
+- 各产品官方文档和定价页面
+- 开源社区（HuggingFace、Civitai、GitHub）
+- 技术评测网站和行业分析报告
+- 用户社区反馈（Discord、Reddit、微博等）
+
+**覆盖产品**（10 家）：
+- 欧美系：Midjourney、Stable Diffusion、DALL-E 3、Ideogram、Flux、Leonardo.ai、Adobe Firefly、Runway、Google Imagen 3
+- 中国系：字节即梦（Dreamina）
+
+**局限性说明**：
+- 部分国内产品（如百度文心一格、腾讯混元、阿里通义万相）未深入覆盖，因公开信息有限
+- 价格和功能可能随时间变化，建议决策前再次核实
+- 画质评分存在主观性，实际体验可能因使用场景而异
+
+**更新记录**：
+- v1.0 (2026-03-07): 初始版本（8 家）
+- v1.1 (2026-03-07): 补充 Google Imagen 3 和字节即梦
 
 > **调研方法说明**：本报告基于官方文档、API 定价页面、开源社区数据及行业分析综合整理。部分价格和功能可能随时间变化，建议决策前再次核实最新信息。
