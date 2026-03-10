@@ -1,21 +1,19 @@
 <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d3748"/>
-      <stop offset="50%" style="stop-color:#4a5568"/>
-      <stop offset="100%" style="stop-color:#718096"/>
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
     </linearGradient>
     <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#ffffff"/>
-      <stop offset="100%" style="stop-color:#e2e8f0"/>
+      <stop offset="100%" style="stop-color:#e0e7ff"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
     <filter id="shadow">
       <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
     </filter>
@@ -25,76 +23,66 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   
   <!-- Grid pattern -->
-  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-  </pattern>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <g opacity="0.03">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="white" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
   
-  <!-- Decorative elements -->
-  <circle cx="100" cy="100" r="150" fill="#4299e1" opacity="0.15"/>
-  <circle cx="1100" cy="530" r="200" fill="#48bb78" opacity="0.15"/>
-  <circle cx="600" cy="315" r="100" fill="#ed8936" opacity="0.1"/>
+  <!-- Decorative circles -->
+  <circle cx="240" cy="504" r="200" fill="url(#accent)" opacity="0.2"/>
+  <circle cx="960" cy="126" r="200" fill="url(#accent)" opacity="0.2"/>
+  <circle cx="480" cy="252" r="150" fill="#e91583" opacity="0.15"/>
   
-  <!-- Code brackets -->
-  <text x="80" cy="200" font-size="200" fill="rgba(255,255,255,0.1)" font-family="monospace">&lt;</text>
-  <text x="1050" cy="450" font-size="200" fill="rgba(255,255,255,0.1)" font-family="monospace">/&gt;</text>
+  <!-- Badge -->
+  <rect x="450" y="80" width="300" height="40" rx="20" fill="url(#accent)" opacity="0.2" stroke="url(#accent)" stroke-width="1"/>
+  <text x="600" y="107" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#a5b4fc" text-anchor="middle">📊 OpenClaw 技能报告</text>
   
-  <!-- Main icon group -->
-  <g transform="translate(600, 150)" filter="url(#glow)">
-    <rect x="-70" y="-70" width="140" height="140" rx="28" fill="rgba(66,153,225,0.2)" stroke="rgba(66,153,225,0.4)" stroke-width="2"/>
-    <text x="0" y="25" text-anchor="middle" font-size="80">🛠️</text>
+  <!-- Icons -->
+  <g font-size="56" text-anchor="middle" filter="url(#shadow)">
+    <text x="480" y="200" fill="url(#accent)">🤖</text>
+    <text x="560" y="200" fill="url(#accent)">👥</text>
+    <text x="640" y="200" fill="url(#accent)">⚡</text>
+    <text x="720" y="200" fill="url(#accent)">💻</text>
+    <text x="800" y="200" fill="url(#accent)">🚀</text>
   </g>
   
   <!-- Title -->
-  <text x="600" y="260" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="url(#title)" filter="url(#shadow)">OpenClaw 软件开发</text>
-  <text x="600" y="310" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="url(#title)" filter="url(#shadow)">Skills 完全清单</text>
+  <text x="600" y="310" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="52" font-weight="800" fill="url(#title)" text-anchor="middle" letter-spacing="-2">Dev Agent Team Skills</text>
   
   <!-- Subtitle -->
-  <text x="600" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#cbd5e0" letter-spacing="3">DEVELOPMENT SKILLS GUIDE</text>
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="26" fill="#94a3b8" text-anchor="middle" letter-spacing="1">开发团队智能体技能全景指南</text>
   
-  <!-- Divider -->
-  <line x1="250" y1="385" x2="950" y2="385" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
-  
-  <!-- Role cards -->
-  <g transform="translate(120, 420)">
-    <rect x="0" y="0" width="180" height="80" rx="12" fill="rgba(66,153,225,0.15)" stroke="rgba(66,153,225,0.4)" stroke-width="1.5"/>
-    <text x="90" y="30" text-anchor="middle" font-size="28">💻</text>
-    <text x="90" y="55" text-anchor="middle" font-family="system-ui" font-size="14" fill="#fff" font-weight="600">前端开发</text>
+  <!-- Skill tags -->
+  <g font-family="Arial, sans-serif" font-size="15" font-weight="500">
+    <!-- Tag 1 -->
+    <rect x="340" y="410" width="140" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="410" y="434" fill="#e2e8f0" text-anchor="middle">ensemble-team</text>
+    
+    <!-- Tag 2 -->
+    <rect x="490" y="410" width="200" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="590" y="434" fill="#e2e8f0" text-anchor="middle">openclaw-team-builder</text>
+    
+    <!-- Tag 3 -->
+    <rect x="340" y="456" width="220" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="450" y="480" fill="#e2e8f0" text-anchor="middle">agent-team-orchestration</text>
+    
+    <!-- Tag 4 -->
+    <rect x="570" y="456" width="180" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="660" y="480" fill="#e2e8f0" text-anchor="middle">fullstack-developer</text>
+    
+    <!-- Tag 5 -->
+    <rect x="455" y="502" width="160" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="535" y="526" fill="#e2e8f0" text-anchor="middle">proactive-agent</text>
   </g>
   
-  <g transform="translate(320, 420)">
-    <rect x="0" y="0" width="180" height="80" rx="12" fill="rgba(72,187,120,0.15)" stroke="rgba(72,187,120,0.4)" stroke-width="1.5"/>
-    <text x="90" y="30" text-anchor="middle" font-size="28">🔧</text>
-    <text x="90" y="55" text-anchor="middle" font-family="system-ui" font-size="14" fill="#fff" font-weight="600">后端开发</text>
+  <!-- Meta info -->
+  <g font-family="Arial, sans-serif" font-size="17" fill="#64748b">
+    <text x="480" y="590" text-anchor="middle">📅 2026-03-10</text>
+    <text x="600" y="590" text-anchor="middle">📄 Version 1.0.0</text>
+    <text x="720" y="590" text-anchor="middle">🎯 5 Core Skills</text>
   </g>
-  
-  <g transform="translate(520, 420)">
-    <rect x="0" y="0" width="180" height="80" rx="12" fill="rgba(237,137,54,0.15)" stroke="rgba(237,137,54,0.4)" stroke-width="1.5"/>
-    <text x="90" y="30" text-anchor="middle" font-size="28">🧪</text>
-    <text x="90" y="55" text-anchor="middle" font-family="system-ui" font-size="14" fill="#fff" font-weight="600">测试/QA</text>
-  </g>
-  
-  <g transform="translate(720, 420)">
-    <rect x="0" y="0" width="180" height="80" rx="12" fill="rgba(159,122,234,0.15)" stroke="rgba(159,122,234,0.4)" stroke-width="1.5"/>
-    <text x="90" y="30" text-anchor="middle" font-size="28">🚀</text>
-    <text x="90" y="55" text-anchor="middle" font-family="system-ui" font-size="14" fill="#fff" font-weight="600">DevOps</text>
-  </g>
-  
-  <g transform="translate(920, 420)">
-    <rect x="0" y="0" width="180" height="80" rx="12" fill="rgba(245,101,101,0.15)" stroke="rgba(245,101,101,0.4)" stroke-width="1.5"/>
-    <text x="90" y="30" text-anchor="middle" font-size="28">📊</text>
-    <text x="90" y="55" text-anchor="middle" font-family="system-ui" font-size="14" fill="#fff" font-weight="600">全栈/架构</text>
-  </g>
-  
-  <!-- Footer -->
-  <text x="600" y="570" text-anchor="middle" font-family="system-ui" font-size="14" fill="#a0aec0" letter-spacing="2">2026 · OpenClaw Skills · 提升开发效率</text>
-  
-  <!-- Corner decorations -->
-  <circle cx="60" cy="570" r="6" fill="rgba(66,153,225,0.5)"/>
-  <circle cx="85" cy="570" r="6" fill="rgba(72,187,120,0.5)"/>
-  <circle cx="110" cy="570" r="6" fill="rgba(237,137,54,0.5)"/>
-  
-  <circle cx="1140" cy="60" r="6" fill="rgba(66,153,225,0.5)"/>
-  <circle cx="1115" cy="60" r="6" fill="rgba(72,187,120,0.5)"/>
-  <circle cx="1090" cy="60" r="6" fill="rgba(237,137,54,0.5)"/>
 </svg>
