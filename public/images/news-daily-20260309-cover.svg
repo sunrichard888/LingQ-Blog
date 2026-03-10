@@ -1,0 +1,62 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 装饰网格 -->
+  <g opacity="0.1">
+    <path d="M0 100 L1200 100" stroke="#00d9ff" stroke-width="1"/>
+    <path d="M0 200 L1200 200" stroke="#00d9ff" stroke-width="1"/>
+    <path d="M0 300 L1200 300" stroke="#00d9ff" stroke-width="1"/>
+    <path d="M0 400 L1200 400" stroke="#00d9ff" stroke-width="1"/>
+    <path d="M0 500 L1200 500" stroke="#00d9ff" stroke-width="1"/>
+    <path d="M0 600 L1200 600" stroke="#00d9ff" stroke-width="1"/>
+  </g>
+  
+  <!-- 火箭 emoji 背景 -->
+  <text x="1050" y="150" font-size="120" opacity="0.15">🚀</text>
+  
+  <!-- 主标题 -->
+  <text x="60" y="180" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#accent)">科技日报</text>
+  
+  <!-- 日期 -->
+  <text x="60" y="240" font-family="Arial, sans-serif" font-size="32" fill="#8892b0">2026 年 3 月 9 日</text>
+  
+  <!-- 分隔线 -->
+  <line x1="60" y1="270" x2="400" y2="270" stroke="url(#accent)" stroke-width="4"/>
+  
+  <!-- 今日热点标签 -->
+  <g transform="translate(60, 320)">
+    <rect x="0" y="0" width="180" height="40" rx="20" fill="#0f3460" opacity="0.8"/>
+    <text x="90" y="27" font-family="Arial, sans-serif" font-size="18" fill="#00d9ff" text-anchor="middle">#AI 幻觉</text>
+    
+    <rect x="200" y="0" width="180" height="40" rx="20" fill="#0f3460" opacity="0.8"/>
+    <text x="290" y="27" font-family="Arial, sans-serif" font-size="18" fill="#00ff88" text-anchor="middle">#手机涨价</text>
+    
+    <rect x="400" y="0" width="180" height="40" rx="20" fill="#0f3460" opacity="0.8"/>
+    <text x="490" y="27" font-family="Arial, sans-serif" font-size="18" fill="#ff6b6b" text-anchor="middle">#机器人融资</text>
+  </g>
+  
+  <!-- 金句 -->
+  <text x="60" y="450" font-family="Arial, sans-serif" font-size="28" fill="#e6e6e6" font-style="italic">"热点年年有，今年特别多"</text>
+  <text x="60" y="490" font-family="Arial, sans-serif" font-size="28" fill="#e6e6e6" font-style="italic">"技术要扎实，别光会整活"</text>
+  
+  <!-- 底部信息 -->
+  <text x="60" y="580" font-family="Arial, sans-serif" font-size="20" fill="#8892b0">编辑：乔叔</text>
+  <text x="1140" y="580" font-family="Arial, sans-serif" font-size="20" fill="#8892b0" text-anchor="end">科技老司机 🚀</text>
+  
+  <!-- TOP10 标识 -->
+  <circle cx="1100" cy="100" r="50" fill="url(#accent)"/>
+  <text x="1100" y="115" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#1a1a2e" text-anchor="middle">TOP10</text>
+</svg>
