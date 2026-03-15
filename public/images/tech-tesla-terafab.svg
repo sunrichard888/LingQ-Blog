@@ -1,0 +1,16 @@
+<svg width="640" height="427" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c1810"/>
+      <stop offset="100%" style="stop-color:#4a1942"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="427" fill="url(#bg)"/>
+  <!-- Factory icon -->
+  <rect x="120" y="200" width="400" height="150" fill="#e94560" opacity="0.3"/>
+  <rect x="150" y="230" width="80" height="120" fill="#feca57" opacity="0.6"/>
+  <rect x="250" y="200" width="100" height="150" fill="#feca57" opacity="0.8"/>
+  <rect x="370" y="230" width="80" height="120" fill="#feca57" opacity="0.6"/>
+  <rect x="470" y="250" width="30" height="100" fill="#48dbfb" opacity="0.8"/>
+  <text x="320" y="380" font-family="Arial" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">Terafab Factory</text>
+</svg>
