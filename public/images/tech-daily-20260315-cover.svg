@@ -1,0 +1,66 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1b4e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#feca57;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#48dbfb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Newspaper pattern -->
+  <g opacity="0.05">
+    <line x1="50" y1="100" x2="1150" y2="100" stroke="#ffffff" stroke-width="2"/>
+    <line x1="50" y1="150" x2="1150" y2="150" stroke="#ffffff" stroke-width="2"/>
+    <line x1="50" y1="200" x2="1150" y2="200" stroke="#ffffff" stroke-width="2"/>
+    <line x1="50" y1="250" x2="1150" y2="250" stroke="#ffffff" stroke-width="2"/>
+    <line x1="50" y1="300" x2="1150" y2="300" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#ffffff">
+    📰 科技日报
+  </text>
+  
+  <!-- Date badge -->
+  <rect x="60" y="150" width="300" height="60" fill="url(#accent)" rx="10"/>
+  <text x="210" y="190" font-family="Arial, sans-serif" font-size="28" fill="#0a0a1a" font-weight="bold" text-anchor="middle">
+    2026 年 3 月 15 日
+  </text>
+  
+  <!-- Divider line -->
+  <line x1="60" y1="240" x2="1140" y2="240" stroke="url(#accent)" stroke-width="4"/>
+  
+  <!-- Hot topics -->
+  <text x="60" y="300" font-family="Arial, sans-serif" font-size="24" fill="#ff6b6b" font-weight="bold">
+    🔥 Broadcom: AI 芯片收入将破千亿美元
+  </text>
+  <text x="60" y="350" font-family="Arial, sans-serif" font-size="24" fill="#feca57">
+    🚀 Musk: Tesla 下周启动 Terafab 芯片工厂
+  </text>
+  <text x="60" y="400" font-family="Arial, sans-serif" font-size="24" fill="#48dbfb">
+    🎮 Nvidia GTC 2026 五大看点前瞻
+  </text>
+  <text x="60" y="450" font-family="Arial, sans-serif" font-size="24" fill="#ff6b6b">
+    📱 Meta 或裁员 20%，AI 转型阵痛
+  </text>
+  <text x="60" y="500" font-family="Arial, sans-serif" font-size="24" fill="#feca57">
+    🤖 8.75 亿安卓手机面临 60 秒黑客风险
+  </text>
+  
+  <!-- Footer -->
+  <text x="1140" y="600" font-family="Arial, sans-serif" font-size="20" fill="#ff6b6b" text-anchor="end" font-weight="bold">
+    编辑：乔叔 | 虾博点评
+  </text>
+  
+  <!-- Lobster emoji -->
+  <text x="1050" y="600" font-size="32">🦞</text>
+</svg>
