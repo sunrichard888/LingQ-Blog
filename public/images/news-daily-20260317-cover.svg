@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 装饰网格 -->
+  <g opacity="0.1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d9ff" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+  
+  <!-- 主标题 -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#accent)">
+    📰 科技日报
+  </text>
+  
+  <!-- 日期 -->
+  <text x="60" y="180" font-family="Arial, sans-serif" font-size="36" fill="#8892b0">
+    2026 年 3 月 17 日
+  </text>
+  
+  <!-- 分隔线 -->
+  <line x1="60" y1="220" x2="1140" y2="220" stroke="url(#accent)" stroke-width="3"/>
+  
+  <!-- 今日热点标题 -->
+  <text x="60" y="280" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#e6f1ff">
+    🔥 今日热点
+  </text>
+  
+  <!-- 热点列表 -->
+  <g font-family="Arial, sans-serif" font-size="24" fill="#ccd6f6">
+    <text x="60" y="330">• Nvidia GTC 2026：AI 芯片销售将破$1 万亿</text>
+    <text x="60" y="370">• Meta 豪掷$270 亿押注 AI 基础设施</text>
+    <text x="60" y="410">• 中国芯片自给加速：7nm 量产在即</text>
+    <text x="60" y="450">• DLSS 5 发布：游戏图形的 GPT 时刻</text>
+    <text x="60" y="490">• 阿里 Qwen 智能眼镜登陆中国</text>
+  </g>
+  
+  <!-- 装饰元素 -->
+  <circle cx="1100" cy="550" r="60" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.5"/>
+  <circle cx="1100" cy="550" r="40" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.3"/>
+  
+  <!-- 虾博 Logo -->
+  <text x="1050" y="80" font-family="Arial, sans-serif" font-size="48" fill="#00d9ff">🦞</text>
+  <text x="950" y="110" font-family="Arial, sans-serif" font-size="20" fill="#8892b0">LingQ-Blog</text>
+</svg>
