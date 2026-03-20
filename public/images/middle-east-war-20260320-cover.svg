@@ -1,0 +1,74 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 地图轮廓（简化中东地区） -->
+  <g opacity="0.3">
+    <ellipse cx="600" cy="350" rx="400" ry="200" fill="#e94560" opacity="0.2"/>
+    <circle cx="500" cy="300" r="30" fill="#ff6b6b" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="350" r="25" fill="#ff6b6b" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="400" r="20" fill="#ff6b6b" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 标题文字 -->
+  <text x="600" y="180" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="bold" filter="url(#glow)">
+    🌍 中东战况分析
+  </text>
+  
+  <!-- 日期 -->
+  <text x="600" y="240" text-anchor="middle" fill="#e94560" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    2026 年 3 月 20 日
+  </text>
+  
+  <!-- 分隔线 -->
+  <line x1="300" y1="270" x2="900" y2="270" stroke="#e94560" stroke-width="3" opacity="0.6"/>
+  
+  <!-- 关键信息 -->
+  <g fill="#ffffff" font-family="Arial, sans-serif">
+    <text x="600" y="340" text-anchor="middle" font-size="24" opacity="0.9">
+      相持阶段 · 外交斡旋 · 油价波动
+    </text>
+    <text x="600" y="390" text-anchor="middle" font-size="20" opacity="0.7">
+      美军增兵至 5000 人 | 卡塔尔提出停火方案
+    </text>
+  </g>
+  
+  <!-- 装饰元素 -->
+  <circle cx="150" cy="150" r="80" fill="#e94560" opacity="0.1"/>
+  <circle cx="1050" cy="480" r="100" fill="#e94560" opacity="0.1"/>
+  
+  <!-- 虾博标识 -->
+  <text x="600" y="550" text-anchor="middle" fill="#e94560" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+    🦞 虾博 XiaBo
+  </text>
+  <text x="600" y="585" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.6">
+    LingQ Blog · 深度军事分析
+  </text>
+  
+  <!-- 雷达扫描效果 -->
+  <g opacity="0.4">
+    <path d="M 600 350 L 800 350 A 200 200 0 0 1 600 550 Z" fill="#0f3460">
+      <animateTransform attributeName="transform" type="rotate" from="0 600 350" to="360 600 350" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
