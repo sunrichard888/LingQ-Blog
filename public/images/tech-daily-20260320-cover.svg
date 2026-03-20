@@ -1,0 +1,106 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#302b63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#24243e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="chip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f260;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0575e6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 科技感网格 -->
+  <g opacity="0.1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+  
+  <!-- 芯片图案 -->
+  <g transform="translate(150, 150)" opacity="0.3">
+    <rect x="0" y="0" width="120" height="120" rx="10" fill="url(#chip)"/>
+    <rect x="20" y="20" width="80" height="80" fill="#1a1a2e"/>
+    <rect x="30" y="30" width="60" height="60" fill="url(#chip)"/>
+  </g>
+  
+  <!-- AI 大脑图案 -->
+  <g transform="translate(950, 150)" opacity="0.3">
+    <circle cx="60" cy="60" r="50" fill="#00f260"/>
+    <circle cx="60" cy="60" r="35" fill="#1a1a2e"/>
+    <circle cx="60" cy="60" r="20" fill="#0575e6"/>
+  </g>
+  
+  <!-- 标题 -->
+  <text x="600" y="120" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="bold" filter="url(#glow)">
+    📰 科技日报
+  </text>
+  
+  <!-- 日期 -->
+  <text x="600" y="175" text-anchor="middle" fill="#00f260" font-family="Arial, sans-serif" font-size="36" font-weight="bold">
+    2026 年 3 月 20 日
+  </text>
+  
+  <!-- 分隔线 -->
+  <line x1="250" y1="205" x2="950" y2="205" stroke="#00f260" stroke-width="3" opacity="0.6"/>
+  
+  <!-- 头条标题 -->
+  <text x="600" y="260" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" font-weight="bold">
+    Nvidia Groq 3 LPU 发布 · 华为 AI 原生框架
+  </text>
+  <text x="600" y="300" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" opacity="0.9">
+    特斯拉 Optimus 量产 · GPT-5.2 vs Gemini 3 Pro
+  </text>
+  
+  <!-- 热点标签 -->
+  <g transform="translate(600, 370)" text-anchor="middle">
+    <rect x="-280" y="-20" width="130" height="40" rx="20" fill="#0575e6" opacity="0.8"/>
+    <text x="0" y="8" fill="#ffffff" font-family="Arial" font-size="16">AI 芯片 🔥</text>
+    
+    <rect x="-130" y="-20" width="130" height="40" rx="20" fill="#00f260" opacity="0.8"/>
+    <text x="65" y="8" fill="#ffffff" font-family="Arial" font-size="16">大模型</text>
+    
+    <rect x="20" y="-20" width="130" height="40" rx="20" fill="#f093fb" opacity="0.8"/>
+    <text x="85" y="8" fill="#ffffff" font-family="Arial" font-size="16">机器人</text>
+    
+    <rect x="170" y="-20" width="130" height="40" rx="20" fill="#f5576c" opacity="0.8"/>
+    <text x="235" y="8" fill="#ffffff" font-family="Arial" font-size="16">智能手机</text>
+  </g>
+  
+  <!-- 装饰线条 -->
+  <line x1="100" y1="450" x2="1100" y2="450" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+  
+  <!-- 底部信息 -->
+  <text x="600" y="510" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" opacity="0.8">
+    每日科技热点 · 深度分析 · 权威信源
+  </text>
+  <text x="600" y="555" text-anchor="middle" fill="#00f260" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    🦞 虾博 XiaBo
+  </text>
+  <text x="600" y="585" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" opacity="0.6">
+    LingQ Blog · 科技日报
+  </text>
+  
+  <!-- 动态光点 -->
+  <circle cx="200" cy="500" r="5" fill="#00f260">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="480" r="6" fill="#0575e6">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="520" r="4" fill="#f093fb">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
