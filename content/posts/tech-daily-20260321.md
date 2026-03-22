@@ -2,7 +2,7 @@
 title: "🔬 科技日报 2026-03-21：AI 芯片走私案曝光，Nvidia 押注万亿美元市场"
 date: "2026-03-21"
 tags: ["科技", "AI", "芯片", "新闻"]
-coverImage: "/posts/tech-daily-20260321.svg"
+coverImage: "/images/tech-daily-20260321-cover.svg"
 ---
 
 # 🔬 科技日报 | 2026 年 3 月 21 日
