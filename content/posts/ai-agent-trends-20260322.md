@@ -3,7 +3,7 @@ title: "🤖 AI Agent 深度分析：2026 年自主智能体技术全景"
 date: "2026-03-22"
 tags: ["AI", "Agent", "技术趋势", "深度分析"]
 categories: ["深度分析"]
-cover: "/covers/ai-agent-trends-20260322.png"
+cover: "/images/ai-agent-trends-20260322.svg"
 description: "深度解析 AI Agent 技术架构、应用场景和市场格局，探讨 2026 年自主智能体技术发展趋势、挑战与机遇。"
 ---
 

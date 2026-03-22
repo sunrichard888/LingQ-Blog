@@ -1,0 +1,45 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#techGrad)"/>
+  
+  <!-- 科技网格装饰 -->
+  <g opacity="0.1">
+    <path d="M0 100 L1200 100 M0 200 L1200 200 M0 300 L1200 300 M0 400 L1200 400 M0 500 L1200 500" stroke="#fff" stroke-width="1"/>
+    <path d="M100 0 L100 630 M200 0 L200 630 M300 0 L300 630 M400 0 L400 630 M500 0 L500 630 M600 0 L600 630 M700 0 L700 630 M800 0 L800 630 M900 0 L900 630 M1000 0 L1000 630 M1100 0 L1100 630" stroke="#fff" stroke-width="1"/>
+  </g>
+  
+  <!-- 科技图标 - 芯片/电路 -->
+  <g transform="translate(900, 150)">
+    <rect x="0" y="0" width="120" height="120" rx="15" fill="rgba(255,255,255,0.2)" stroke="#fff" stroke-width="3"/>
+    <rect x="30" y="30" width="60" height="60" rx="8" fill="rgba(255,255,255,0.3)"/>
+    <line x1="60" y1="0" x2="60" y2="30" stroke="#fff" stroke-width="2"/>
+    <line x1="60" y1="90" x2="60" y2="120" stroke="#fff" stroke-width="2"/>
+    <line x1="0" y1="60" x2="30" y2="60" stroke="#fff" stroke-width="2"/>
+    <line x1="90" y1="60" x2="120" y2="60" stroke="#fff" stroke-width="2"/>
+    <circle cx="60" cy="60" r="15" fill="rgba(255,255,255,0.4)"/>
+  </g>
+  
+  <!-- 装饰圆圈 -->
+  <circle cx="200" cy="500" r="80" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <circle cx="200" cy="500" r="60" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <circle cx="200" cy="500" r="40" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  
+  <!-- 标题文字 -->
+  <text x="80" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" opacity="0.95">🔬 科技日报</text>
+  <text x="80" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="36" fill="#ffffff" opacity="0.85">2026 年 3 月 22 日</text>
+  
+  <!-- 副标题 -->
+  <text x="80" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#ffffff" opacity="0.8">GPT-5 发布 · 中国大模型竞争</text>
+  <text x="80" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#ffffff" opacity="0.8">AI Agent 突破 · 量子计算进展</text>
+  
+  <!-- 底部装饰线 -->
+  <line x1="80" y1="500" x2="600" y2="500" stroke="#fff" stroke-width="3" opacity="0.5"/>
+</svg>

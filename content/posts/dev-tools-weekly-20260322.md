@@ -3,7 +3,7 @@ title: "🛠️ 开发者工具周报 2026-03-22：AI 编程助手新特性"
 date: "2026-03-22"
 tags: ["开发者工具", "AI", "编程", "周报"]
 categories: ["开发者工具"]
-cover: "/covers/dev-tools-weekly-20260322.png"
+cover: "/images/dev-tools-weekly-20260322.svg"
 description: "GitHub Copilot Workspace 正式发布，Cursor 推出 Team 版本，VS Code 1.88 更新，精选开源项目和实用技术教程。"
 ---
 
