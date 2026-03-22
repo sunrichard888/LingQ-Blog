@@ -1,0 +1,75 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- 网格背景 -->
+  <g opacity="0.1">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d9ff" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+  
+  <!-- 中心图标：多 Agent 协作示意 -->
+  <g transform="translate(600, 280)" filter="url(#glow)">
+    <!-- 中心节点 -->
+    <circle cx="0" cy="0" r="50" fill="url(#accentGradient)" opacity="0.9"/>
+    <text x="0" y="5" text-anchor="middle" fill="#fff" font-size="24" font-weight="bold">AI</text>
+    
+    <!-- 周围节点 -->
+    <circle cx="-120" cy="-80" r="35" fill="#0f3460" stroke="#00d9ff" stroke-width="2"/>
+    <text x="-120" y="-75" text-anchor="middle" fill="#fff" font-size="14">尚书</text>
+    
+    <circle cx="120" cy="-80" r="35" fill="#0f3460" stroke="#00d9ff" stroke-width="2"/>
+    <text x="120" y="-75" text-anchor="middle" fill="#fff" font-size="14">工部</text>
+    
+    <circle cx="-120" cy="80" r="35" fill="#0f3460" stroke="#00d9ff" stroke-width="2"/>
+    <text x="-120" y="85" text-anchor="middle" fill="#fff" font-size="14">兵部</text>
+    
+    <circle cx="120" cy="80" r="35" fill="#0f3460" stroke="#00d9ff" stroke-width="2"/>
+    <text x="120" y="85" text-anchor="middle" fill="#fff" font-size="14">户部</text>
+    
+    <!-- 连接线 -->
+    <line x1="0" y1="0" x2="-120" y2="-80" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="120" y2="-80" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="-120" y2="80" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="120" y2="80" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- 标题 -->
+  <text x="600" y="480" text-anchor="middle" fill="#fff" font-size="42" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+    AI Agent 企业落地实战
+  </text>
+  
+  <!-- 副标题 -->
+  <text x="600" y="530" text-anchor="middle" fill="#00d9ff" font-size="24" font-family="system-ui, -apple-system, sans-serif">
+    从概念到生产力 · 2026
+  </text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="100" cy="100" r="8" fill="#00d9ff" opacity="0.6"/>
+  <circle cx="1100" cy="530" r="12" fill="#00d9ff" opacity="0.4"/>
+  <circle cx="200" cy="550" r="6" fill="#00d9ff" opacity="0.5"/>
+  <circle cx="1000" cy="80" r="10" fill="#00d9ff" opacity="0.3"/>
+</svg>
