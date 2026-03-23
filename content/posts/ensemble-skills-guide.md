@@ -3,6 +3,7 @@ title: "Ensemble Team + Pipeline 技能体系完整指南"
 date: "2026-03-23"
 tags: ["AI Agent", "多代理协作", "TDD", "代码质量", "工程效能"]
 category: "技术"
+coverImage: "/images/ensemble-skills-guide-cover.svg"
 ---
 
 > 🚀 **AI Agent 协作技能体系**
