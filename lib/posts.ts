@@ -20,10 +20,19 @@ export function getSortedPostsData() {
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const matterResult = matter(fileContents)
 
+      // gray-matter 会自动将 YYYY-MM-DD 解析为 Date 对象，需要转回字符串
+      const rawDate = matterResult.data.date
+      let dateStr: string
+      if (rawDate instanceof Date) {
+        dateStr = rawDate.toISOString().split('T')[0]
+      } else {
+        dateStr = String(rawDate || '未知日期')
+      }
+
       return {
         slug,
         title: matterResult.data.title || '无标题',
-        date: matterResult.data.date || '未知日期',
+        date: dateStr,
         description: matterResult.data.description || '',
         coverImage: matterResult.data.coverImage || null,
       }
@@ -56,10 +65,19 @@ export async function getPostData(slug: string) {
   // 使用 marked 将 Markdown 转换为 HTML（支持图片、表格等）
   const contentHtml = await marked(matterResult.content)
 
+  // gray-matter 会自动将 YYYY-MM-DD 解析为 Date 对象，需要转回字符串
+  const rawDate = matterResult.data.date
+  let dateStr: string
+  if (rawDate instanceof Date) {
+    dateStr = rawDate.toISOString().split('T')[0]
+  } else {
+    dateStr = String(rawDate || '未知日期')
+  }
+
   return {
     slug,
     title: matterResult.data.title || '无标题',
-    date: matterResult.data.date || '未知日期',
+    date: dateStr,
     description: matterResult.data.description || '',
     coverImage: matterResult.data.coverImage || null,
     contentHtml,
