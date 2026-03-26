@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280">
+  <rect width="700" height="280" fill="#1a202c" rx="8"/>
+  
+  <text x="350" y="30" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="bold" font-family="system-ui">📊 Qwen3-Next 397B 参数分布</text>
+  
+  <!-- Pie chart approximation using bars -->
+  <g transform="translate(100, 80)">
+    <!-- MoE Experts (256B) - largest -->
+    <rect x="0" y="0" width="256" height="30" fill="#ff6b6b" rx="4"/>
+    <text x="266" y="20" text-anchor="left" fill="#ff6b6b" font-size="11" font-family="system-ui">MoE 专家 (512 个) 256B (64.5%)</text>
+    
+    <!-- Attention (128B) -->
+    <rect x="0" y="40" width="128" height="30" fill="#4299e1" rx="4"/>
+    <text x="138" y="60" text-anchor="left" fill="#4299e1" font-size="11" font-family="system-ui">Attention (64 层) 128B (32.2%)</text>
+    
+    <!-- Router (12B) -->
+    <rect x="0" y="80" width="12" height="30" fill="#f6ad55" rx="4"/>
+    <text x="22" y="100" text-anchor="left" fill="#f6ad55" font-size="11" font-family="system-ui">路由 + 归一化 12B (3%)</text>
+    
+    <!-- Embedding (0.75B) -->
+    <rect x="0" y="120" width="8" height="30" fill="#00d9ff" rx="4"/>
+    <text x="18" y="140" text-anchor="left" fill="#00d9ff" font-size="11" font-family="system-ui">嵌入层 0.75B (0.2%)</text>
+    
+    <!-- Output Head (0.75B) -->
+    <rect x="0" y="150" width="8" height="30" fill="#48bb78" rx="4"/>
+    <text x="18" y="170" text-anchor="left" fill="#48bb78" font-size="11" font-family="system-ui">输出头 0.75B (0.2%)</text>
+  </g>
+  
+  <!-- Key insight box -->
+  <rect x="420" y="80" width="260" height="100" fill="#1a202c" stroke="#00d9ff" stroke-width="2" rx="8"/>
+  <text x="550" y="105" text-anchor="middle" fill="#00d9ff" font-size="12" font-weight="bold" font-family="system-ui">🔑 关键洞察</text>
+  <text x="440" y="130" text-anchor="left" fill="#e2e8f0" font-size="11" font-family="system-ui">• 词表只影响嵌入层 + 输出头</text>
+  <text x="440" y="150" text-anchor="left" fill="#e2e8f0" font-size="11" font-family="system-ui">• 合计约 1.5B，仅占 0.4%</text>
+  <text x="440" y="170" text-anchor="left" fill="#e2e8f0" font-size="11" font-family="system-ui">• 99.6% 参数在模型主体</text>
+  
+  <!-- Total params -->
+  <rect x="420" y="200" width="260" height="60" fill="#2d3748" stroke="#48bb78" stroke-width="2" rx="8"/>
+  <text x="550" y="225" text-anchor="middle" fill="#e2e8f0" font-size="11" font-family="system-ui">总参数：397B</text>
+  <text x="550" y="248" text-anchor="middle" fill="#48bb78" font-size="12" font-weight="bold" font-family="system-ui">每次激活：17B (4.3%)</text>
+</svg>

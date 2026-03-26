@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 220">
+  <rect width="700" height="220" fill="#1a202c" rx="8"/>
+  
+  <text x="350" y="30" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="bold" font-family="system-ui">🔢 嵌入层：Token ID → 向量</text>
+  
+  <g font-family="system-ui">
+    <!-- Input -->
+    <rect x="20" y="60" width="120" height="50" fill="#2d3748" stroke="#00d9ff" stroke-width="2" rx="6"/>
+    <text x="80" y="80" text-anchor="middle" fill="#fff" font-size="11">Token ID 列表</text>
+    <text x="80" y="100" text-anchor="middle" fill="#718096" font-size="10">[12345, 6789...]</text>
+    
+    <!-- Arrow -->
+    <path d="M140 85 L170 85" stroke="#00d9ff" stroke-width="2" marker-end="url(#arrow3)"/>
+    
+    <!-- Gather -->
+    <rect x="170" y="60" width="100" height="50" fill="#1a202c" stroke="#a0aec0" stroke-width="1" rx="6"/>
+    <text x="220" y="85" text-anchor="middle" fill="#fff" font-size="12">Gather 操作</text>
+    
+    <!-- Arrow -->
+    <path d="M270 85 L300 85" stroke="#00d9ff" stroke-width="2" marker-end="url(#arrow3)"/>
+    
+    <!-- HBM -->
+    <rect x="300" y="50" width="160" height="80" fill="#1a202c" stroke="#fc8181" stroke-width="2" rx="6"/>
+    <text x="380" y="70" text-anchor="middle" fill="#fc8181" font-size="11" font-weight="bold">HBM/DRAM</text>
+    <text x="380" y="95" text-anchor="middle" fill="#fff" font-size="10">嵌入矩阵</text>
+    <text x="380" y="115" text-anchor="middle" fill="#718096" font-size="9">150K × 5120</text>
+    
+    <!-- Arrow -->
+    <path d="M460 85 L490 85" stroke="#00d9ff" stroke-width="2" marker-end="url(#arrow3)"/>
+    
+    <!-- SRAM -->
+    <rect x="490" y="60" width="180" height="50" fill="#2d3748" stroke="#48bb78" stroke-width="2" rx="6"/>
+    <text x="580" y="80" text-anchor="middle" fill="#fff" font-size="11">SRAM</text>
+    <text x="580" y="100" text-anchor="middle" fill="#718096" font-size="10">5 个 5120 维向量</text>
+  </g>
+  
+  <!-- Stats box -->
+  <rect x="20" y="150" width="300" height="50" fill="#1a202c" stroke="#4a5568" stroke-width="1" rx="6"/>
+  <text x="170" y="170" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="bold">📊 嵌入矩阵大小</text>
+  <text x="50" y="190" text-anchor="left" fill="#00d9ff" font-size="10">150000 × 5120 × 2 字节 ≈ 1.5 GB</text>
+  
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00d9ff"/>
+    </marker>
+  </defs>
+</svg>

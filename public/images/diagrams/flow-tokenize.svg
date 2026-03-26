@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200">
+  <rect width="700" height="200" fill="#1a202c" rx="8"/>
+  
+  <text x="350" y="30" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="bold" font-family="system-ui">🔤 Tokenize 流程</text>
+  
+  <g font-family="system-ui">
+    <!-- Input -->
+    <rect x="20" y="60" width="140" height="50" fill="#2d3748" stroke="#00d9ff" stroke-width="2" rx="6"/>
+    <text x="90" y="85" text-anchor="middle" fill="#fff" font-size="13">"什么是 MoE 架构？"</text>
+    
+    <!-- Arrow -->
+    <path d="M160 85 L190 85" stroke="#00d9ff" stroke-width="2" marker-end="url(#arrow2)"/>
+    
+    <!-- BPE -->
+    <rect x="190" y="60" width="120" height="50" fill="#1a202c" stroke="#a0aec0" stroke-width="1" rx="6"/>
+    <text x="250" y="80" text-anchor="middle" fill="#fff" font-size="12">BPE 分词算法</text>
+    <text x="250" y="100" text-anchor="middle" fill="#718096" font-size="10">CPU/预处理 IP</text>
+    
+    <!-- Arrow -->
+    <path d="M310 85 L340 85" stroke="#00d9ff" stroke-width="2" marker-end="url(#arrow2)"/>
+    
+    <!-- Output -->
+    <rect x="340" y="60" width="180" height="50" fill="#2d3748" stroke="#ff6b6b" stroke-width="2" rx="6"/>
+    <text x="430" y="80" text-anchor="middle" fill="#fff" font-size="12">[12345, 6789, 101...]</text>
+    <text x="430" y="100" text-anchor="middle" fill="#718096" font-size="10">Token ID 列表</text>
+    
+    <!-- Mapping table -->
+    <rect x="540" y="50" width="140" height="100" fill="#1a202c" stroke="#4a5568" stroke-width="1" rx="6"/>
+    <text x="610" y="70" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="bold">Token 映射</text>
+    <text x="560" y="90" text-anchor="left" fill="#718096" font-size="9">12345 → 什么</text>
+    <text x="560" y="105" text-anchor="left" fill="#718096" font-size="9">6789 → 是</text>
+    <text x="560" y="120" text-anchor="left" fill="#718096" font-size="9">101 → Mo</text>
+    <text x="560" y="135" text-anchor="left" fill="#718096" font-size="9">23456 → E</text>
+  </g>
+  
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00d9ff"/>
+    </marker>
+  </defs>
+</svg>
