@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a5a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <g stroke="#2a2a4a" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="100" text-anchor="middle" fill="#ffffff" font-size="42" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">🦞 大模型架构全景解析</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="150" text-anchor="middle" fill="#8899a6" font-size="24" font-family="system-ui, -apple-system, sans-serif">从用户提问到芯片运算的完整链路</text>
+  
+  <!-- Architecture Diagram -->
+  <g transform="translate(150, 200)" filter="url(#glow)">
+    <!-- Input Box -->
+    <rect x="0" y="0" width="180" height="60" rx="8" fill="#2d3748" stroke="url(#accent1)" stroke-width="2"/>
+    <text x="90" y="35" text-anchor="middle" fill="#ffffff" font-size="16" font-family="system-ui">用户输入</text>
+    
+    <!-- Arrow -->
+    <path d="M180 30 L220 30" stroke="url(#accent1)" stroke-width="3" marker-end="url(#arrowhead)"/>
+    
+    <!-- Tokenize Box -->
+    <rect x="220" y="0" width="140" height="60" rx="8" fill="#2d3748" stroke="#a0aec0" stroke-width="2"/>
+    <text x="290" y="25" text-anchor="middle" fill="#ffffff" font-size="14" font-family="system-ui">Tokenize</text>
+    <text x="290" y="45" text-anchor="middle" fill="#718096" font-size="12" font-family="system-ui">文字→ID</text>
+    
+    <!-- Arrow -->
+    <path d="M360 30 L400 30" stroke="url(#accent1)" stroke-width="3"/>
+    
+    <!-- Embedding Box -->
+    <rect x="400" y="0" width="140" height="60" rx="8" fill="#2d3748" stroke="#a0aec0" stroke-width="2"/>
+    <text x="470" y="25" text-anchor="middle" fill="#ffffff" font-size="14" font-family="system-ui">Embedding</text>
+    <text x="470" y="45" text-anchor="middle" fill="#718096" font-size="12" font-family="system-ui">ID→向量</text>
+    
+    <!-- Arrow -->
+    <path d="M540 30 L580 30" stroke="url(#accent1)" stroke-width="3"/>
+    
+    <!-- Transformer Stack -->
+    <rect x="580" y="-40" width="280" height="140" rx="8" fill="#1a365d" stroke="url(#accent1)" stroke-width="3"/>
+    <text x="720" y="-15" text-anchor="middle" fill="#00d9ff" font-size="16" font-weight="bold" font-family="system-ui">Transformer ×64 层</text>
+    
+    <!-- Attention -->
+    <rect x="600" y="0" width="110" height="50" rx="6" fill="#2d3748" stroke="#4299e1" stroke-width="2"/>
+    <text x="655" y="20" text-anchor="middle" fill="#ffffff" font-size="12" font-family="system-ui">Attention</text>
+    <text x="655" y="38" text-anchor="middle" fill="#718096" font-size="10" font-family="system-ui">GQA/MLA</text>
+    
+    <!-- MoE -->
+    <rect x="730" y="0" width="110" height="50" rx="6" fill="#2d3748" stroke="url(#accent2)" stroke-width="2"/>
+    <text x="785" y="20" text-anchor="middle" fill="#ffffff" font-size="12" font-family="system-ui">MoE 专家</text>
+    <text x="785" y="38" text-anchor="middle" fill="#718096" font-size="10" font-family="system-ui">4/512 激活</text>
+    
+    <!-- Arrow -->
+    <path d="M860 30 L900 30" stroke="url(#accent1)" stroke-width="3"/>
+    
+    <!-- Output Head -->
+    <rect x="900" y="0" width="140" height="60" rx="8" fill="#2d3748" stroke="#a0aec0" stroke-width="2"/>
+    <text x="970" y="25" text-anchor="middle" fill="#ffffff" font-size="14" font-family="system-ui">Output Head</text>
+    <text x="970" y="45" text-anchor="middle" fill="#718096" font-size="12" font-family="system-ui">向量→概率</text>
+    
+    <!-- Arrow -->
+    <path d="M1040 30 L1080 30" stroke="url(#accent1)" stroke-width="3"/>
+    
+    <!-- Output Box -->
+    <rect x="1080" y="0" width="140" height="60" rx="8" fill="#2d3748" stroke="url(#accent1)" stroke-width="2"/>
+    <text x="1150" y="35" text-anchor="middle" fill="#ffffff" font-size="16" font-family="system-ui">文字输出</text>
+  </g>
+  
+  <!-- Key Stats -->
+  <g transform="translate(150, 400)">
+    <rect x="0" y="0" width="280" height="140" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="1"/>
+    <text x="140" y="30" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold" font-family="system-ui">📊 Qwen3-Next 参数分布</text>
+    <text x="30" y="65" fill="#00d9ff" font-size="14" font-family="system-ui">总参数：397B</text>
+    <text x="30" y="90" fill="#ff6b6b" font-size="14" font-family="system-ui">激活参数：17B</text>
+    <text x="30" y="115" fill="#48bb78" font-size="14" font-family="system-ui">专家数：512 个</text>
+  </g>
+  
+  <g transform="translate(460, 400)">
+    <rect x="0" y="0" width="280" height="140" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="1"/>
+    <text x="140" y="30" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold" font-family="system-ui">🔑 核心技术演进</text>
+    <text x="30" y="65" fill="#00d9ff" font-size="14" font-family="system-ui">注意力：MHA→GQA→MLA</text>
+    <text x="30" y="90" fill="#f6ad55" font-size="14" font-family="system-ui">架构：Dense→MoE→Hybrid</text>
+    <text x="30" y="115" fill="#48bb78" font-size="14" font-family="system-ui">上下文：4K→128K→1M</text>
+  </g>
+  
+  <g transform="translate(770, 400)">
+    <rect x="0" y="0" width="280" height="140" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="1"/>
+    <text x="140" y="30" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold" font-family="system-ui">⚡ 性能瓶颈</text>
+    <text x="30" y="65" fill="#fc8181" font-size="14" font-family="system-ui">显存带宽是最大瓶颈</text>
+    <text x="30" y="90" fill="#f6ad55" font-size="14" font-family="system-ui">KV Cache 吃显存</text>
+    <text x="30" y="115" fill="#48bb78" font-size="14" font-family="system-ui">优化：量化 + 稀疏 + 压缩</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="600" y="590" text-anchor="middle" fill="#4a5568" font-size="14" font-family="system-ui">虾博深度分析 · 2026 年 3 月 · LingQ-Blog</text>
+</svg>
