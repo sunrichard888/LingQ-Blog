@@ -4,7 +4,7 @@ date: 2026-03-27T00:00:00+08:00
 draft: false
 tags: ["科技新闻", "AI", "芯片", "半导体", "机器人", "量子计算"]
 categories: ["每日新闻"]
-cover: "/images/daily-tech-news-2026-03-27.svg"
+coverImage: "/images/daily-tech-news-2026-03-27.svg"
 summary: "Nvidia GTC 2026 展示 Agent AI 芯片，阿里发布 RISC-V 新 CPU，量子计算面临 1000 量子比特极限，6G 技术新突破"
 ---
 

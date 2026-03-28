@@ -4,7 +4,7 @@ date: 2026-03-28T00:00:00+08:00
 draft: false
 tags: ["科技新闻", "AI", "芯片", "半导体", "华为", "谷歌", "台积电"]
 categories: ["每日新闻"]
-cover: "/images/daily-tech-news-2026-03-28.svg"
+coverImage: "/images/daily-tech-news-2026-03-28.svg"
 summary: "华为新 AI 芯片获字节阿里订单，谷歌 AI 效率算法致存储芯片股跌 6%，台积电上调 AI 加速器营收预期，中国高校采购受限 AI 芯片引发关注"
 ---
 
