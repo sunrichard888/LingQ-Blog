@@ -1,0 +1,45 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" fill="url(#accent)" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="120" fill="url(#accent)" opacity="0.1"/>
+  <circle cx="600" cy="315" r="200" fill="url(#accent)" opacity="0.05"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <path d="M0 100 L1200 100 M0 200 L1200 200 M0 300 L1200 300 M0 400 L1200 400 M0 500 L1200 500" stroke="#00d9ff" stroke-width="1"/>
+    <path d="M100 0 L100 630 M200 0 L200 630 M300 0 L300 630 M400 0 L400 630 M500 0 L500 630 M600 0 L600 630 M700 0 L700 630 M800 0 L800 630 M900 0 L900 630 M1000 0 L1000 630 M1100 0 L1100 630" stroke="#00d9ff" stroke-width="1"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="url(#accent)">每日科技新闻</text>
+  <text x="600" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" opacity="0.8">Daily Tech News</text>
+  
+  <!-- Date -->
+  <text x="600" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#00d9ff">2026 年 3 月 31 日</text>
+  
+  <!-- Topics -->
+  <g transform="translate(600, 380)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">华为 AI 芯片 · 小鹏 robotaxi · BYD 智驾</text>
+    <text x="0" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">谷歌 AI 压缩 · 中国芯片 · LiDAR 盈利</text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="200" y="500" width="800" height="4" fill="url(#accent)" rx="2"/>
+  
+  <!-- Footer -->
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.6">LingQ Blog · 虾博精选</text>
+</svg>
