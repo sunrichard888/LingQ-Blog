@@ -1,0 +1,50 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b81;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="badge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ed573;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7bed9f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative elements - military style -->
+  <circle cx="100" cy="100" r="80" fill="url(#accent)" opacity="0.15"/>
+  <circle cx="1100" cy="530" r="120" fill="url(#accent)" opacity="0.15"/>
+  
+  <!-- Corner decorations -->
+  <rect x="0" y="0" width="15" height="630" fill="url(#accent)" opacity="0.3"/>
+  <rect x="1185" y="0" width="15" height="630" fill="url(#accent)" opacity="0.3"/>
+  
+  <!-- Main title -->
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="52" fill="#ffffff">每日军事新闻</text>
+  
+  <!-- Date -->
+  <text x="600" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#ff6b81">2026 年 4 月 3 日</text>
+  
+  <!-- Topic badge -->
+  <rect x="420" y="280" width="360" height="65" rx="32" fill="url(#badge)"/>
+  <text x="600" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#1a1a2e">军事 · 国防 · 装备</text>
+  
+  <!-- Decorative line -->
+  <line x1="200" y1="400" x2="1000" y2="400" stroke="url(#accent)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Key topics -->
+  <text x="600" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#cccccc">太空军事 · 国防预算 · 武器采购 · 海军部署</text>
+  
+  <!-- Footer -->
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#888888">LingQ-Blog Daily Military News</text>
+  
+  <!-- Star decorations -->
+  <polygon points="150,520 155,535 170,535 158,545 163,560 150,550 137,560 142,545 130,535 145,535" fill="url(#accent)" opacity="0.5"/>
+  <polygon points="1050,520 1055,535 1070,535 1058,545 1063,560 1050,550 1037,560 1042,545 1030,535 1045,535" fill="url(#accent)" opacity="0.5"/>
+</svg>
