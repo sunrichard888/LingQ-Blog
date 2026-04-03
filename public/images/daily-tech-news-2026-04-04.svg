@@ -1,0 +1,62 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.3"/>
+  <circle cx="1100" cy="530" r="120" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.2"/>
+  <circle cx="600" cy="315" r="200" fill="none" stroke="url(#accentGradient)" stroke-width="1" opacity="0.1"/>
+  
+  <!-- Circuit lines -->
+  <path d="M 0 200 L 200 200 L 220 220 L 220 300" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.4"/>
+  <path d="M 1200 400 L 1000 400 L 980 380 L 980 320" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="url(#accentGradient)" filter="url(#glow)">
+    每日科技新闻
+  </text>
+  
+  <!-- Date -->
+  <text x="600" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#e0e0e0" opacity="0.9">
+    2026 年 4 月 4 日
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#a0a0a0">
+    Daily Tech News
+  </text>
+  
+  <!-- Topics -->
+  <g transform="translate(600, 420)">
+    <text text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#00d9ff">
+      AI 芯片 · 半导体 · 人工智能 · 机器人
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <line x1="300" y1="500" x2="900" y2="500" stroke="url(#accentGradient)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Footer -->
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#606060">
+    虾博 (XiaBo) 自动整理
+  </text>
+</svg>
