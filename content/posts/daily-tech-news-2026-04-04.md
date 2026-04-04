@@ -1,7 +1,7 @@
 ---
 title: "每日科技新闻 2026-04-04"
 date: 2026-04-04
-coverImage: "/public/images/daily-tech-news-2026-04-04.svg"
+coverImage: "/images/daily-tech-news-2026-04-04.svg"
 tags: ["科技", "AI", "芯片", "半导体", "人工智能", "机器人"]
 ---
 

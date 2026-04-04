@@ -1,7 +1,7 @@
 ---
 title: "每日军事新闻 2026-04-03"
 date: 2026-04-03
-coverImage: "/public/images/daily-tech-news-2026-04-03.svg"
+coverImage: "/images/daily-tech-news-2026-04-03.svg"
 tags: ["军事", "国防", "装备", "国际防务"]
 ---
 
