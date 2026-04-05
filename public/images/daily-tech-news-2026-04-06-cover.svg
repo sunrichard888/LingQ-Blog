@@ -1,0 +1,92 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Decorative Circles -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.3"/>
+  <circle cx="1100" cy="530" r="120" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.2"/>
+  <circle cx="900" cy="150" r="60" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Tech Circuit Lines -->
+  <path d="M 0 200 L 150 200 L 170 220 L 250 220" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+  <path d="M 950 450 L 1100 450 L 1120 470 L 1200 470" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
+  <circle cx="150" cy="200" r="4" fill="#3b82f6"/>
+  <circle cx="250" cy="220" r="4" fill="#3b82f6"/>
+  <circle cx="1100" cy="450" r="4" fill="#8b5cf6"/>
+  <circle cx="1200" cy="470" r="4" fill="#8b5cf6"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" filter="url(#glow)">
+    每日科技新闻
+  </text>
+  
+  <!-- Date -->
+  <text x="600" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#94a3b8">
+    2026 年 4 月 6 日
+  </text>
+  
+  <!-- Decorative Line -->
+  <line x1="400" y1="270" x2="800" y2="270" stroke="url(#accentGradient)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Highlight Topics -->
+  <g transform="translate(600, 340)">
+    <!-- Topic 1: AI Chip -->
+    <rect x="-280" y="-40" width="180" height="80" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="-190" y="-5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#60a5fa" font-weight="600">🖥️ AI 芯片</text>
+    <text x="-190" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#cbd5e1">中国厂商创新高</text>
+    
+    <!-- Topic 2: Robot -->
+    <rect x="-80" y="-40" width="180" height="80" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="10" y="-5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#a78bfa" font-weight="600">🤖 具身智能</text>
+    <text x="10" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#cbd5e1">万台量产下线</text>
+    
+    <!-- Topic 3: Quantum -->
+    <rect x="120" y="-40" width="180" height="80" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    <text x="210" y="-5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#22d3ee" font-weight="600">⚛️ 量子计算</text>
+    <text x="210" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#cbd5e1">规模化量产</text>
+  </g>
+  
+  <!-- Bottom Stats -->
+  <g transform="translate(600, 480)">
+    <text x="0" y="0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#64748b" font-weight="500">
+      今日精选 · 20 条前沿科技动态 · 中国芯片占 AI 加速器市场 41%
+    </text>
+  </g>
+  
+  <!-- Footer Brand -->
+  <text x="600" y="570" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#475569" letter-spacing="2">
+    LINGQ BLOG · 虾博 XiaBo 自动整理
+  </text>
+  
+  <!-- Corner Accents -->
+  <path d="M 20 20 L 60 20 L 60 25 L 25 25 L 25 60 L 20 60 Z" fill="#3b82f6" opacity="0.6"/>
+  <path d="M 1180 20 L 1140 20 L 1140 25 L 1175 25 L 1175 60 L 1180 60 Z" fill="#8b5cf6" opacity="0.6"/>
+  <path d="M 20 610 L 60 610 L 60 605 L 25 605 L 25 570 L 20 570 Z" fill="#06b6d4" opacity="0.6"/>
+  <path d="M 1180 610 L 1140 610 L 1140 605 L 1175 605 L 1175 570 L 1180 570 Z" fill="#3b82f6" opacity="0.6"/>
+</svg>
