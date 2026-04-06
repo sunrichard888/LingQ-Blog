@@ -1,0 +1,70 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d2d2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a7c23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b9a4c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a959;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Military camouflage pattern hint -->
+  <circle cx="150" cy="120" r="100" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.2"/>
+  <circle cx="1050" cy="510" r="150" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.15"/>
+  <circle cx="600" cy="315" r="250" fill="none" stroke="url(#goldGradient)" stroke-width="1" opacity="0.1"/>
+  
+  <!-- Tactical lines -->
+  <path d="M 0 180 L 180 180 L 200 200 L 200 280" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.5"/>
+  <path d="M 1200 420 L 1020 420 L 1000 400 L 1000 340" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Star decorations -->
+  <polygon points="100,80 105,95 120,95 108,105 112,120 100,110 88,120 92,105 80,95 95,95" fill="url(#goldGradient)" opacity="0.6"/>
+  <polygon points="1100,550 1105,565 1120,565 1108,575 1112,590 1100,580 1088,590 1092,575 1080,565 1095,565" fill="url(#goldGradient)" opacity="0.6"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="url(#goldGradient)" filter="url(#glow)">
+    每日军事新闻
+  </text>
+  
+  <!-- Date -->
+  <text x="600" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#e0e0e0" opacity="0.9">
+    2026 年 4 月 7 日
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#a0a0a0">
+    Daily Military News
+  </text>
+  
+  <!-- Topics -->
+  <g transform="translate(600, 420)">
+    <text text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#4a7c23">
+      国防 · 装备 · 导弹系统 · 无人机 · 反无人机
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <line x1="300" y1="500" x2="900" y2="500" stroke="url(#goldGradient)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Footer -->
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#606060">
+    虾博 (XiaBo) 自动整理
+  </text>
+</svg>
