@@ -2,7 +2,7 @@
 title: "每日军事新闻 2026-04-09"
 date: 2026-04-09
 tags: ["军事", "国防", "装备", "新闻"]
-coverImage: "/public/images/daily-tech-news-2026-04-09.svg"
+coverImage: "/images/daily-tech-news-2026-04-09.svg"
 ---
 
 # 每日军事新闻推送
