@@ -1,0 +1,95 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Circuit pattern -->
+  <g stroke="rgba(0,217,255,0.1)" stroke-width="2" fill="none">
+    <path d="M100 100 L300 100 L300 200 L500 200"/>
+    <path d="M700 150 L900 150 L900 250 L1100 250"/>
+    <path d="M200 400 L400 400 L400 500 L600 500"/>
+    <path d="M800 350 L1000 350 L1000 450"/>
+    <circle cx="300" cy="100" r="5" fill="rgba(0,217,255,0.3)"/>
+    <circle cx="500" cy="200" r="5" fill="rgba(0,217,255,0.3)"/>
+    <circle cx="900" cy="150" r="5" fill="rgba(0,217,255,0.3)"/>
+    <circle cx="1100" cy="250" r="5" fill="rgba(0,217,255,0.3)"/>
+    <circle cx="400" cy="400" r="5" fill="rgba(0,255,136,0.3)"/>
+    <circle cx="600" cy="500" r="5" fill="rgba(0,255,136,0.3)"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="url(#accentGradient)" filter="url(#glow)">
+    每日科技新闻
+  </text>
+  
+  <!-- Date -->
+  <text x="600" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#e0e0e0">
+    2026 年 4 月 18 日 星期六
+  </text>
+  
+  <!-- Decorative line -->
+  <line x1="300" y1="270" x2="900" y2="270" stroke="url(#accentGradient)" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Topics -->
+  <text x="600" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#00d9ff">
+    AI · 芯片 · 半导体 · 科技前沿
+  </text>
+  
+  <!-- Icon/Logo area -->
+  <g transform="translate(550, 380)">
+    <!-- Chip icon -->
+    <rect x="0" y="0" width="100" height="100" rx="10" fill="rgba(0,217,255,0.1)" stroke="url(#accentGradient)" stroke-width="2"/>
+    <rect x="20" y="20" width="60" height="60" rx="5" fill="rgba(0,217,255,0.2)" stroke="rgba(0,217,255,0.5)" stroke-width="1.5"/>
+    <line x1="50" y1="20" x2="50" y2="80" stroke="rgba(0,217,255,0.4)" stroke-width="1.5"/>
+    <line x1="20" y1="50" x2="80" y2="50" stroke="rgba(0,217,255,0.4)" stroke-width="1.5"/>
+    <!-- Pin lines -->
+    <line x1="50" y1="0" x2="50" y2="15" stroke="rgba(0,217,255,0.6)" stroke-width="2"/>
+    <line x1="50" y1="85" x2="50" y2="100" stroke="rgba(0,217,255,0.6)" stroke-width="2"/>
+    <line x1="0" y1="50" x2="15" y2="50" stroke="rgba(0,217,255,0.6)" stroke-width="2"/>
+    <line x1="85" y1="50" x2="100" y2="50" stroke="rgba(0,217,255,0.6)" stroke-width="2"/>
+  </g>
+  
+  <!-- Bottom info -->
+  <text x="600" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#888888">
+    虾博 (XiaBo) 自动整理推送
+  </text>
+  
+  <!-- Decorative corners -->
+  <g stroke="url(#accentGradient)" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M50 50 L100 50 L100 70"/>
+    <path d="M50 50 L50 100 L70 100"/>
+    <path d="M1150 50 L1100 50 L1100 70"/>
+    <path d="M1150 50 L1150 100 L1130 100"/>
+    <path d="M50 580 L100 580 L100 560"/>
+    <path d="M50 580 L50 530 L70 530"/>
+    <path d="M1150 580 L1100 580 L1100 560"/>
+    <path d="M1150 580 L1150 530 L1130 530"/>
+  </g>
+  
+  <!-- Floating particles -->
+  <circle cx="150" cy="150" r="3" fill="rgba(0,217,255,0.4)"/>
+  <circle cx="1050" cy="180" r="4" fill="rgba(0,255,136,0.4)"/>
+  <circle cx="200" cy="450" r="3" fill="rgba(0,217,255,0.3)"/>
+  <circle cx="1000" cy="500" r="4" fill="rgba(0,255,136,0.3)"/>
+  <circle cx="450" cy="120" r="2" fill="rgba(0,217,255,0.5)"/>
+  <circle cx="750" cy="520" r="3" fill="rgba(0,255,136,0.4)"/>
+</svg>
