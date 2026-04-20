@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  
+  <!-- Military icon (shield) -->
+  <g transform="translate(900, 100)" filter="url(#glow)">
+    <path d="M100 20 L180 50 L180 120 C180 180 100 220 100 220 C100 220 20 180 20 120 L20 50 Z" 
+          fill="none" stroke="url(#accent)" stroke-width="4"/>
+    <path d="M100 40 L160 65 L160 115 C160 160 100 195 100 195 C100 195 40 160 40 115 L40 65 Z" 
+          fill="url(#accent)" fill-opacity="0.2"/>
+    <text x="100" y="145" text-anchor="middle" fill="#e94560" font-size="60" font-weight="bold">★</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="500" r="80" fill="url(#accent)" fill-opacity="0.1"/>
+  <circle cx="150" cy="500" r="60" fill="url(#accent)" fill-opacity="0.15"/>
+  <circle cx="150" cy="500" r="40" fill="url(#accent)" fill-opacity="0.2"/>
+  
+  <!-- Main title -->
+  <text x="80" y="280" fill="#ffffff" font-size="72" font-weight="bold" font-family="Arial, sans-serif">
+    每日军事新闻
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="340" fill="#e94560" font-size="32" font-family="Arial, sans-serif" font-weight="300">
+    Daily Military News Digest
+  </text>
+  
+  <!-- Date -->
+  <g transform="translate(80, 420)">
+    <rect x="0" y="-40" width="280" height="60" rx="8" fill="url(#accent)" filter="url(#glow)"/>
+    <text x="140" y="5" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial, sans-serif" text-anchor="middle">
+      2026-04-21
+    </text>
+  </g>
+  
+  <!-- Topics -->
+  <g transform="translate(80, 520)">
+    <text x="0" y="0" fill="#a0a0a0" font-size="18" font-family="Arial, sans-serif">
+      国防预算 · 武器系统 · 国际军事 · 导弹防御
+    </text>
+  </g>
+  
+  <!-- Corner accent -->
+  <path d="M1100 0 L1200 0 L1200 100 L1150 100 L1150 50 L1100 50 Z" fill="url(#accent)" fill-opacity="0.3"/>
+  <path d="M0 530 L0 630 L100 630 L100 580 L50 580 L50 530 Z" fill="url(#accent)" fill-opacity="0.3"/>
+</svg>
