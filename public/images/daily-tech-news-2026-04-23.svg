@@ -1,0 +1,132 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- 装饰性网格线 -->
+  <g opacity="0.1">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#ffffff" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="500" y1="0" x2="500" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="700" y1="0" x2="700" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="1100" y1="0" x2="1100" y2="630" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- 军事主题图标 - 雷达/卫星碟 -->
+  <g transform="translate(950, 150)" opacity="0.3">
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#e94560" stroke-width="3"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#e94560" stroke-width="2"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#e94560" stroke-width="2"/>
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#e94560" stroke-width="2"/>
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#e94560" stroke-width="2"/>
+  </g>
+  
+  <!-- 装饰性元素 - 战机剪影 -->
+  <g transform="translate(1000, 500)" opacity="0.2">
+    <path d="M0,0 L100,-20 L80,0 L100,20 Z" fill="#e94560"/>
+  </g>
+  
+  <!-- 主标题区域 -->
+  <g transform="translate(80, 120)">
+    <!-- 标签 -->
+    <rect x="0" y="0" width="180" height="50" rx="25" fill="url(#accentGradient)" filter="url(#glow)"/>
+    <text x="90" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">🎖️ 军事新闻</text>
+    
+    <!-- 主标题 -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">每日新闻精选</text>
+    
+    <!-- 日期 -->
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="32" fill="#e94560">2026 年 4 月 23 日</text>
+    
+    <!-- 分隔线 -->
+    <line x1="0" y1="190" x2="500" y2="190" stroke="url(#accentGradient)" stroke-width="4"/>
+  </g>
+  
+  <!-- 关键信息卡片 -->
+  <g transform="translate(80, 350)">
+    <rect x="0" y="0" width="500" height="200" rx="15" fill="#16213e" stroke="#e94560" stroke-width="2" opacity="0.8"/>
+    
+    <!-- 头条新闻 -->
+    <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e94560">🔥 今日头条</text>
+    <text x="30" y="80" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">美军推动 2027 年无人机和</text>
+    <text x="30" y="105" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">防空系统预算大幅增加</text>
+    
+    <!-- 次要新闻 -->
+    <text x="30" y="150" font-family="Arial, sans-serif" font-size="16" fill="#aaaaaa">📡 日本国防出口政策重大调整</text>
+    <text x="30" y="175" font-family="Arial, sans-serif" font-size="16" fill="#aaaaaa">🌏 澳大利亚更新国防战略计划</text>
+  </g>
+  
+  <!-- 右侧统计信息 -->
+  <g transform="translate(650, 350)">
+    <rect x="0" y="0" width="470" height="200" rx="15" fill="#0f3460" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+    
+    <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">📊 今日概览</text>
+    
+    <text x="30" y="90" font-family="Arial, sans-serif" font-size="24" fill="#e94560">6</text>
+    <text x="70" y="90" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">条精选新闻</text>
+    
+    <text x="200" y="90" font-family="Arial, sans-serif" font-size="24" fill="#e94560">4</text>
+    <text x="240" y="90" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">大类别</text>
+    
+    <text x="350" y="90" font-family="Arial, sans-serif" font-size="24" fill="#e94560">24h</text>
+    <text x="420" y="90" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">内更新</text>
+    
+    <!-- 关键词标签 -->
+    <g transform="translate(30, 130)">
+      <rect x="0" y="0" width="90" height="30" rx="15" fill="#e94560" opacity="0.8"/>
+      <text x="45" y="20" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">无人机</text>
+      
+      <rect x="100" y="0" width="90" height="30" rx="15" fill="#e94560" opacity="0.8"/>
+      <text x="145" y="20" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">防空系统</text>
+      
+      <rect x="200" y="0" width="90" height="30" rx="15" fill="#e94560" opacity="0.8"/>
+      <text x="245" y="20" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">国防预算</text>
+      
+      <rect x="300" y="0" width="90" height="30" rx="15" fill="#e94560" opacity="0.8"/>
+      <text x="345" y="20" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">武器出口</text>
+    </g>
+  </g>
+  
+  <!-- 底部信息 -->
+  <g transform="translate(80, 580)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#666666">由虾博 (XiaBo) 自动生成 | 数据来源：Tavily 新闻搜索 | 下次更新：2026-04-24 (科技新闻)</text>
+  </g>
+  
+  <!-- 装饰性角落元素 -->
+  <g transform="translate(1150, 50)" opacity="0.5">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#e94560" stroke-width="2"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#e94560" stroke-width="1"/>
+    <circle cx="0" cy="0" r="10" fill="#e94560"/>
+  </g>
+  
+  <g transform="translate(50, 580)" opacity="0.5">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#e94560" stroke-width="2"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#e94560" stroke-width="1"/>
+    <circle cx="0" cy="0" r="5" fill="#e94560"/>
+  </g>
+</svg>
