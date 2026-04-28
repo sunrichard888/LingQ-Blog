@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="50%" style="stop-color:#1a2a4a"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c"/>
+      <stop offset="100%" style="stop-color:#c0392b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="0" x2="0" y2="630"/><line x1="60" y1="0" x2="60" y2="630"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="180" y1="0" x2="180" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="360" y1="0" x2="360" y2="630"/><line x1="420" y1="0" x2="420" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="540" y1="0" x2="540" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="660" y1="0" x2="660" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/><line x1="780" y1="0" x2="780" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/><line x1="1020" y1="0" x2="1020" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/><line x1="1140" y1="0" x2="1140" y2="630"/>
+    <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="63" x2="1200" y2="63"/>
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="189" x2="1200" y2="189"/>
+    <line x1="0" y1="252" x2="1200" y2="252"/><line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="441" x2="1200" y2="441"/>
+    <line x1="0" y1="504" x2="1200" y2="504"/><line x1="0" y1="567" x2="1200" y2="567"/>
+  </g>
+  <!-- Radar circle -->
+  <circle cx="950" cy="315" r="200" fill="none" stroke="#e74c3c" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="950" cy="315" r="150" fill="none" stroke="#e74c3c" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="950" cy="315" r="100" fill="none" stroke="#e74c3c" stroke-width="0.5" opacity="0.15"/>
+  <!-- Crosshair -->
+  <line x1="750" y1="315" x2="1150" y2="315" stroke="#e74c3c" stroke-width="0.5" opacity="0.3"/>
+  <line x1="950" y1="115" x2="950" y2="515" stroke="#e74c3c" stroke-width="0.5" opacity="0.3"/>
+  <!-- Shield icon -->
+  <g transform="translate(900, 260)" filter="url(#glow)">
+    <path d="M50 0 L100 20 L100 70 Q100 110 50 130 Q0 110 0 70 L0 20 Z" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    <path d="M50 15 L85 30 L85 65 Q85 95 50 110 Q15 95 15 65 L15 30 Z" fill="#e74c3c" opacity="0.1"/>
+    <text x="50" y="75" text-anchor="middle" fill="#e74c3c" font-size="36" font-weight="bold">⚔</text>
+  </g>
+  <!-- Date badge -->
+  <rect x="60" y="50" width="200" height="40" rx="20" fill="#e74c3c" opacity="0.9"/>
+  <text x="160" y="76" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="16" font-weight="bold">2026-04-29</text>
+  <!-- Main title -->
+  <text x="80" y="180" fill="#ffffff" font-family="sans-serif" font-size="52" font-weight="bold" letter-spacing="2">每日军事新闻</text>
+  <text x="80" y="240" fill="#e74c3c" font-family="sans-serif" font-size="32" font-weight="bold">Daily Military News</text>
+  <!-- Divider line -->
+  <line x1="80" y1="270" x2="500" y2="270" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Subtitle highlights -->
+  <text x="80" y="320" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 五角大楼创新预算增至9.83亿美元</text>
+  <text x="80" y="360" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 德国弹药产能超越美国</text>
+  <text x="80" y="400" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 谷歌与五角大楼达成AI协议</text>
+  <text x="80" y="440" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 澳大利亚采购268辆布什马斯特装甲车</text>
+  <text x="80" y="480" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 A-10攻击机将服役至2030年</text>
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#0a1628" opacity="0.8"/>
+  <text x="60" y="612" fill="#556677" font-family="sans-serif" font-size="14">虾博 XiaBo · 每日新闻精选 · 20条军事要闻</text>
+  <text x="1100" y="612" text-anchor="end" fill="#e74c3c" font-family="sans-serif" font-size="14" font-weight="bold">DAILY BRIEF</text>
+</svg>
