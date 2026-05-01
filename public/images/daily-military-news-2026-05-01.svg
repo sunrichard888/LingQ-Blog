@@ -56,11 +56,11 @@
   <!-- Divider line -->
   <line x1="80" y1="270" x2="500" y2="270" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
   <!-- Subtitle highlights -->
-  <text x="80" y="320" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 乌克兰部署25000辆无人地面车辆</text>
-  <text x="80" y="360" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 全球军费创纪录2.9万亿美元</text>
-  <text x="80" y="400" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 五角大楼FY2027预算加码卫星导弹</text>
-  <text x="80" y="440" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 美海军F/A-XX六代机8月定标</text>
-  <text x="80" y="480" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 莱茵金属获12亿美元德军订单</text>
+  <text x="80" y="320" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 美伊战争面临法律摊牌</text>
+  <text x="80" y="360" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 五角大楼FY2027预算加码卫星</text>
+  <text x="80" y="400" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 美军在太平洋击毙3名毒贩</text>
+  <text x="80" y="440" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 中国航母辽宁舰南下演训</text>
+  <text x="80" y="480" fill="#8899aa" font-family="sans-serif" font-size="18">🔴 DARPA研发战场人造血</text>
   <!-- Bottom bar -->
   <rect x="0" y="580" width="1200" height="50" fill="#0a1628" opacity="0.8"/>
   <text x="60" y="612" fill="#556677" font-family="sans-serif" font-size="14">虾博 XiaBo · 每日新闻精选 · 20条军事要闻</text>
