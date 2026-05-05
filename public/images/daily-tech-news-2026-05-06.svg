@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="50%" style="stop-color:#1a1040"/>
+      <stop offset="100%" style="stop-color:#0d1b3e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#7b2fff"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#ff2d55"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.06" stroke="#fff" stroke-width="0.5">
+    <line x1="0" y1="0" x2="0" y2="630"/><line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/><line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/><line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <!-- Circuit board decorative lines -->
+  <g opacity="0.15" stroke="#00d4ff" stroke-width="1.5" fill="none">
+    <path d="M850,80 L920,80 L920,150 L980,150"/>
+    <circle cx="980" cy="150" r="4" fill="#00d4ff"/>
+    <path d="M880,200 L950,200 L950,280 L1020,280"/>
+    <circle cx="1020" cy="280" r="4" fill="#00d4ff"/>
+    <path d="M900,400 L960,400 L960,480 L1050,480"/>
+    <circle cx="1050" cy="480" r="4" fill="#00d4ff"/>
+    <path d="M860,520 L920,520 L920,580"/>
+    <circle cx="920" cy="580" r="4" fill="#00d4ff"/>
+    <!-- Left side -->
+    <path d="M100,120 L170,120 L170,200"/>
+    <circle cx="170" cy="200" r="4" fill="#7b2fff"/>
+    <path d="M80,300 L140,300 L140,380 L220,380"/>
+    <circle cx="220" cy="380" r="4" fill="#7b2fff"/>
+  </g>
+
+  <!-- Floating chip icons -->
+  <g opacity="0.12" transform="translate(1050,100)">
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="none" stroke="#00d4ff" stroke-width="2"/>
+    <rect x="15" y="15" width="30" height="30" rx="4" fill="#00d4ff" opacity="0.3"/>
+    <line x1="10" y1="-8" x2="10" y2="0" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="25" y1="-8" x2="25" y2="0" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="40" y1="-8" x2="40" y2="0" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="10" y1="60" x2="10" y2="68" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="25" y1="60" x2="25" y2="68" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="40" y1="60" x2="40" y2="68" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="-8" y1="15" x2="0" y2="15" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="-8" y1="30" x2="0" y2="30" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="-8" y1="45" x2="0" y2="45" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="60" y1="15" x2="68" y2="15" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="60" y1="30" x2="68" y2="30" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="60" y1="45" x2="68" y2="45" stroke="#00d4ff" stroke-width="2"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="550" r="120" fill="url(#accent)" opacity="0.04"/>
+  <circle cx="150" cy="80" r="80" fill="url(#accent2)" opacity="0.04"/>
+
+  <!-- Title area -->
+  <g transform="translate(80, 180)">
+    <!-- Tag -->
+    <rect x="0" y="0" width="140" height="32" rx="16" fill="url(#accent)" opacity="0.15"/>
+    <text x="70" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#00d4ff" text-anchor="middle" font-weight="600">🔬 科技日报</text>
+
+    <!-- Main title -->
+    <text x="0" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="52" fill="#ffffff" font-weight="800" filter="url(#glow)">每日科技日报</text>
+
+    <!-- Date -->
+    <text x="0" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#8892b0" font-weight="400">2026 年 5 月 6 日 · 星期二</text>
+
+    <!-- Accent line -->
+    <rect x="0" y="170" width="600" height="3" rx="1.5" fill="url(#accent)" opacity="0.6"/>
+  </g>
+
+  <!-- Headline highlights -->
+  <g transform="translate(80, 430)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#00d4ff" font-weight="700" opacity="0.9">📡 今日焦点</text>
+    <text x="0" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#ccd6f6" font-weight="400">Samsung 芯片利润飙升 49 倍  ·  硅谷巨头签约五角大楼  ·  苹果探索美国造芯</text>
+    <text x="0" y="72" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#ccd6f6" font-weight="400">天玑 9600 芯片泄露  ·  UMC 利润翻倍  ·  iPhone 18 Pro 发布日期揭晓</text>
+  </g>
+
+  <!-- Right side icon -->
+  <g transform="translate(950, 160)" filter="url(#softGlow)">
+    <!-- AI Brain / Neural Network icon -->
+    <circle cx="60" cy="60" r="55" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.4"/>
+    <circle cx="60" cy="60" r="40" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.3"/>
+    <!-- Neural nodes -->
+    <circle cx="40" cy="35" r="5" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="80" cy="35" r="5" fill="#7b2fff" opacity="0.7"/>
+    <circle cx="25" cy="60" r="5" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="95" cy="60" r="5" fill="#7b2fff" opacity="0.7"/>
+    <circle cx="40" cy="85" r="5" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="80" cy="85" r="5" fill="#7b2fff" opacity="0.7"/>
+    <circle cx="60" cy="60" r="6" fill="#00d4ff" opacity="0.9"/>
+    <!-- Neural connections -->
+    <line x1="40" y1="35" x2="80" y2="35" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+    <line x1="25" y1="60" x2="95" y2="60" stroke="#7b2fff" stroke-width="1" opacity="0.3"/>
+    <line x1="40" y1="85" x2="80" y2="85" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+    <line x1="40" y1="35" x2="60" y2="60" stroke="#00d4ff" stroke-width="1" opacity="0.25"/>
+    <line x1="80" y1="35" x2="60" y2="60" stroke="#7b2fff" stroke-width="1" opacity="0.25"/>
+    <line x1="25" y1="60" x2="60" y2="60" stroke="#00d4ff" stroke-width="1" opacity="0.25"/>
+    <line x1="95" y1="60" x2="60" y2="60" stroke="#7b2fff" stroke-width="1" opacity="0.25"/>
+    <line x1="40" y1="85" x2="60" y2="60" stroke="#00d4ff" stroke-width="1" opacity="0.25"/>
+    <line x1="80" y1="85" x2="60" y2="60" stroke="#7b2fff" stroke-width="1" opacity="0.25"/>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#000" opacity="0.3"/>
+  <text x="600" y="615" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8892b0" text-anchor="middle" opacity="0.6">虾秘 (Xiamei) 🦐 自动整理  |  LingQ-Blog 每日科技日报</text>
+</svg>
