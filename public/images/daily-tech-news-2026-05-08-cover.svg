@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#3a7bd5"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f857a6"/>
+      <stop offset="100%" stop-color="#ff5858"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="80" r="200" fill="rgba(0,210,255,0.06)"/>
+  <circle cx="150" cy="550" r="180" fill="rgba(248,87,166,0.05)"/>
+  <circle cx="600" cy="315" r="300" fill="rgba(58,123,213,0.03)"/>
+
+  <!-- Circuit-like lines -->
+  <g stroke="rgba(0,210,255,0.15)" stroke-width="1.5" fill="none">
+    <path d="M 80 100 L 200 100 L 200 150 L 350 150"/>
+    <path d="M 850 500 L 950 500 L 950 550 L 1100 550"/>
+    <path d="M 700 80 L 700 120 L 800 120"/>
+    <path d="M 100 480 L 100 420 L 250 420"/>
+    <circle cx="350" cy="150" r="4" fill="rgba(0,210,255,0.3)"/>
+    <circle cx="1100" cy="550" r="4" fill="rgba(0,210,255,0.3)"/>
+    <circle cx="800" cy="120" r="4" fill="rgba(0,210,255,0.3)"/>
+    <circle cx="250" cy="420" r="4" fill="rgba(248,87,166,0.3)"/>
+  </g>
+
+  <!-- Floating tech icons -->
+  <g fill="rgba(255,255,255,0.08)" font-size="28" font-family="monospace">
+    <text x="880" y="180">⚡</text>
+    <text x="950" y="300">🤖</text>
+    <text x="1000" y="420">💻</text>
+    <text x="100" y="200">🔬</text>
+    <text x="150" y="350">🚗</text>
+    <text x="900" y="100">🧠</text>
+  </g>
+
+  <!-- Date badge -->
+  <rect x="60" y="50" rx="20" ry="20" width="180" height="40" fill="rgba(255,255,255,0.08)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+  <text x="150" y="76" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="system-ui, sans-serif" font-size="16" font-weight="500">2026-05-08</text>
+
+  <!-- Main title -->
+  <text x="600" y="250" text-anchor="middle" fill="url(#accent)" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" filter="url(#glow)">
+    每日科技新闻
+  </text>
+
+  <!-- Subtitle line -->
+  <line x1="400" y1="280" x2="800" y2="280" stroke="url(#accent)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Topics -->
+  <g font-family="system-ui, sans-serif" font-size="22" font-weight="400">
+    <text x="600" y="330" text-anchor="middle" fill="rgba(255,255,255,0.85)">AI  ·  芯片  ·  半导体  ·  量子计算  ·  电动汽车</text>
+  </g>
+
+  <!-- Highlight keywords -->
+  <g font-family="system-ui, sans-serif" font-size="14" font-weight="600">
+    <rect x="230" y="370" rx="15" ry="15" width="120" height="32" fill="rgba(0,210,255,0.15)" stroke="rgba(0,210,255,0.3)"/>
+    <text x="290" y="392" text-anchor="middle" fill="#00d2ff">半导体热潮</text>
+
+    <rect x="370" y="370" rx="15" ry="15" width="120" height="32" fill="rgba(248,87,166,0.15)" stroke="rgba(248,87,166,0.3)"/>
+    <text x="430" y="392" text-anchor="middle" fill="#f857a6">量子突破</text>
+
+    <rect x="510" y="370" rx="15" ry="15" width="120" height="32" fill="rgba(255,215,0,0.15)" stroke="rgba(255,215,0,0.3)"/>
+    <text x="570" y="392" text-anchor="middle" fill="#ffd700">EV AI化</text>
+
+    <rect x="650" y="370" rx="15" ry="15" width="120" height="32" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.3)"/>
+    <text x="710" y="392" text-anchor="middle" fill="#00ff88">具身智能</text>
+
+    <rect x="790" y="370" rx="15" ry="15" width="130" height="32" fill="rgba(160,120,255,0.15)" stroke="rgba(160,120,255,0.3)"/>
+    <text x="855" y="392" text-anchor="middle" fill="#a078ff">自主可控</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="60" y="540" width="1080" height="1" fill="rgba(255,255,255,0.1)"/>
+  <text x="600" y="570" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14">
+    虾博 XiaBo · 每日自动整理推送 · 20 条精选科技资讯
+  </text>
+
+  <!-- Corner decorations -->
+  <path d="M 40 40 L 40 70 M 40 40 L 70 40" stroke="rgba(0,210,255,0.4)" stroke-width="2" fill="none"/>
+  <path d="M 1160 40 L 1160 70 M 1160 40 L 1130 40" stroke="rgba(0,210,255,0.4)" stroke-width="2" fill="none"/>
+  <path d="M 40 590 L 40 560 M 40 590 L 70 590" stroke="rgba(0,210,255,0.4)" stroke-width="2" fill="none"/>
+  <path d="M 1160 590 L 1160 560 M 1160 590 L 1130 590" stroke="rgba(0,210,255,0.4)" stroke-width="2" fill="none"/>
+</svg>
