@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="50%" style="stop-color:#1a2744"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#f4a261"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <!-- Decorative radar circles -->
+  <circle cx="950" cy="315" r="200" fill="none" stroke="#e63946" stroke-opacity="0.08" stroke-width="1"/>
+  <circle cx="950" cy="315" r="150" fill="none" stroke="#e63946" stroke-opacity="0.12" stroke-width="1"/>
+  <circle cx="950" cy="315" r="100" fill="none" stroke="#e63946" stroke-opacity="0.16" stroke-width="1"/>
+  <circle cx="950" cy="315" r="50" fill="none" stroke="#e63946" stroke-opacity="0.2" stroke-width="1"/>
+  <!-- Crosshair -->
+  <line x1="950" y1="215" x2="950" y2="415" stroke="#e63946" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="850" y1="315" x2="1050" y2="315" stroke="#e63946" stroke-opacity="0.3" stroke-width="1"/>
+  <!-- Top bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+  <!-- Shield icon -->
+  <g transform="translate(60, 100)" filter="url(#glow)">
+    <path d="M40 0 L80 20 L80 60 Q80 100 40 120 Q0 100 0 60 L0 20 Z" fill="none" stroke="#e63946" stroke-width="2.5"/>
+    <path d="M30 30 L40 50 L55 25" fill="none" stroke="#f4a261" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Title -->
+  <text x="160" y="155" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffffff">每日军事新闻精选</text>
+  <text x="160" y="200" font-family="Arial, sans-serif" font-size="22" fill="#a0b4c8">Daily Military News Digest</text>
+  <!-- Red accent line -->
+  <rect x="160" y="220" width="120" height="4" fill="#e63946" rx="2"/>
+  <!-- Date -->
+  <text x="160" y="280" font-family="Arial, sans-serif" font-size="28" fill="#f4a261" font-weight="bold">2026 年 5 月 9 日 · 星期六</text>
+  <!-- Key topics -->
+  <g transform="translate(160, 320)">
+    <rect x="0" y="0" width="180" height="36" rx="18" fill="#e63946" fill-opacity="0.15" stroke="#e63946" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="90" y="23" font-family="Arial, sans-serif" font-size="14" fill="#e63946" text-anchor="middle" font-weight="bold">俄乌冲突</text>
+    <rect x="195" y="0" width="180" height="36" rx="18" fill="#f4a261" fill-opacity="0.15" stroke="#f4a261" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="285" y="23" font-family="Arial, sans-serif" font-size="14" fill="#f4a261" text-anchor="middle" font-weight="bold">AI 与国防</text>
+    <rect x="390" y="0" width="180" height="36" rx="18" fill="#4895ef" fill-opacity="0.15" stroke="#4895ef" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="480" y="23" font-family="Arial, sans-serif" font-size="14" fill="#4895ef" text-anchor="middle" font-weight="bold">全球军费</text>
+    <rect x="585" y="0" width="180" height="36" rx="18" fill="#4cc9a0" fill-opacity="0.15" stroke="#4cc9a0" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="675" y="23" font-family="Arial, sans-serif" font-size="14" fill="#4cc9a0" text-anchor="middle" font-weight="bold">中东局势</text>
+    <rect x="780" y="0" width="180" height="36" rx="18" fill="#7b68ee" fill-opacity="0.15" stroke="#7b68ee" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="870" y="23" font-family="Arial, sans-serif" font-size="14" fill="#7b68ee" text-anchor="middle" font-weight="bold">亚太安全</text>
+  </g>
+  <!-- Headlines preview -->
+  <g transform="translate(160, 400)">
+    <text font-family="Arial, sans-serif" font-size="16" fill="#a0b4c8">
+      <tspan x="0" dy="0" fill="#ffffff" font-weight="bold">▸</tspan> 俄乌互相宣布停火，莫斯科胜利日阅兵首次无坦克
+      <tspan x="0" dy="32" fill="#ffffff" font-weight="bold">▸</tspan> 美陆军测试 AI 网络防御，响应速度超越人类
+      <tspan x="0" dy="32" fill="#ffffff" font-weight="bold">▸</tspan> 土耳其公开洲际弹道导弹 Yıldırımhan
+      <tspan x="0" dy="32" fill="#ffffff" font-weight="bold">▸</tspan> 乌克兰先进无人机引发俄军担忧
+    </text>
+  </g>
+  <!-- Bottom bar -->
+  <rect x="0" y="624" width="1200" height="6" fill="url(#accent)"/>
+  <!-- Watermark -->
+  <text x="1140" y="610" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" fill-opacity="0.2" text-anchor="end">LingQ Blog</text>
+</svg>
