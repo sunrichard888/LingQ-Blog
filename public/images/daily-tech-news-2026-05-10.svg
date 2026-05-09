@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="50%" style="stop-color:#302b63"/>
+      <stop offset="100%" style="stop-color:#24243e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d2ff"/>
+      <stop offset="100%" style="stop-color:#3a7bd5"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid pattern -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="630"/><line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/><line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/><line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+  <!-- Circuit-like decorative lines -->
+  <g stroke="url(#accent)" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M50,300 L200,300 L250,250 L250,150 L350,150"/>
+    <path d="M1150,350 L1000,350 L950,400 L950,500 L850,500"/>
+    <circle cx="350" cy="150" r="4" fill="#00d2ff" filter="url(#glow)"/>
+    <circle cx="850" cy="500" r="4" fill="#3a7bd5" filter="url(#glow)"/>
+  </g>
+  <!-- Chip icon -->
+  <g transform="translate(900,80)" opacity="0.6">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="none" stroke="#00d2ff" stroke-width="2"/>
+    <rect x="20" y="20" width="40" height="40" rx="4" fill="rgba(0,210,255,0.15)" stroke="#00d2ff" stroke-width="1.5"/>
+    <line x1="40" y1="0" x2="40" y2="20" stroke="#00d2ff" stroke-width="1.5"/>
+    <line x1="40" y1="60" x2="40" y2="80" stroke="#00d2ff" stroke-width="1.5"/>
+    <line x1="0" y1="40" x2="20" y2="40" stroke="#00d2ff" stroke-width="1.5"/>
+    <line x1="60" y1="40" x2="80" y2="40" stroke="#00d2ff" stroke-width="1.5"/>
+    <line x1="20" y1="0" x2="20" y2="20" stroke="#00d2ff" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="20" stroke="#00d2ff" stroke-width="1"/>
+    <line x1="20" y1="60" x2="20" y2="80" stroke="#00d2ff" stroke-width="1"/>
+    <line x1="60" y1="60" x2="60" y2="80" stroke="#00d2ff" stroke-width="1"/>
+  </g>
+  <!-- AI brain icon -->
+  <g transform="translate(100,480)" opacity="0.3">
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#3a7bd5" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="15" fill="none" stroke="#3a7bd5" stroke-width="1"/>
+    <line x1="30" y1="5" x2="30" y2="15" stroke="#3a7bd5" stroke-width="1"/>
+    <line x1="30" y1="45" x2="30" y2="55" stroke="#3a7bd5" stroke-width="1"/>
+    <line x1="5" y1="30" x2="15" y2="30" stroke="#3a7bd5" stroke-width="1"/>
+    <line x1="45" y1="30" x2="55" y2="30" stroke="#3a7bd5" stroke-width="1"/>
+  </g>
+  <!-- Title -->
+  <text x="60" y="180" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="800" fill="white">科技日报</text>
+  <text x="60" y="230" font-family="system-ui,-apple-system,sans-serif" font-size="28" fill="url(#accent)" font-weight="300">Daily Tech News</text>
+  <!-- Date -->
+  <text x="60" y="290" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="rgba(255,255,255,0.7)" font-weight="400">2026年5月10日 · 星期日</text>
+  <!-- Divider -->
+  <line x1="60" y1="320" x2="500" y2="320" stroke="url(#accent)" stroke-width="2"/>
+  <!-- Keywords -->
+  <g font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="600">
+    <rect x="60" y="350" rx="20" ry="20" width="100" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="110" y="373" text-anchor="middle" fill="#00d2ff">AI</text>
+    <rect x="175" y="350" rx="20" ry="20" width="130" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="240" y="373" text-anchor="middle" fill="#00d2ff">半导体</text>
+    <rect x="320" y="350" rx="20" ry="20" width="140" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="390" y="373" text-anchor="middle" fill="#00d2ff">自动驾驶</text>
+    <rect x="475" y="350" rx="20" ry="20" width="130" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="540" y="373" text-anchor="middle" fill="#00d2ff">量子计算</text>
+    <rect x="620" y="350" rx="20" ry="20" width="110" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="675" y="373" text-anchor="middle" fill="#00d2ff">芯片</text>
+    <rect x="745" y="350" rx="20" ry="20" width="110" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="800" y="373" text-anchor="middle" fill="#00d2ff">新能源</text>
+    <rect x="870" y="350" rx="20" ry="20" width="100" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="920" y="373" text-anchor="middle" fill="#00d2ff">量子</text>
+    <rect x="985" y="350" rx="20" ry="20" width="120" height="36" fill="rgba(0,210,255,0.12)" stroke="rgba(0,210,255,0.3)" stroke-width="1"/>
+    <text x="1045" y="373" text-anchor="middle" fill="#00d2ff">网络安全</text>
+  </g>
+  <!-- Highlight items -->
+  <g font-family="system-ui,-apple-system,sans-serif">
+    <text x="60" y="440" font-size="18" fill="rgba(255,255,255,0.5)" font-weight="400">🔥 NVIDIA 400亿AI投资 | 华为昇腾950PR | 小鹏X-Cache</text>
+    <text x="60" y="475" font-size="18" fill="rgba(255,255,255,0.5)" font-weight="400">🔥 英飞凌上调预期 | 量子计算新合作 | 自动驾驶加速</text>
+    <text x="60" y="510" font-size="18" fill="rgba(255,255,255,0.5)" font-weight="400">🔥 中国芯片独立生态 | 微软AI安全呼吁 | 新能源前沿</text>
+  </g>
+  <!-- Footer -->
+  <text x="60" y="590" font-family="system-ui,-apple-system,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">LingQ Blog · 每日科技速递</text>
+</svg>
