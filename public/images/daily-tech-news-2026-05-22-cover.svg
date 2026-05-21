@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="50%" style="stop-color:#1a1a3e"/>
+      <stop offset="100%" style="stop-color:#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#7b2ff7"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#7b2ff7;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <g opacity="0.06" stroke="#00d4ff" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <!-- Circuit pattern -->
+  <g opacity="0.08" stroke="#00d4ff" stroke-width="1.5" fill="none">
+    <path d="M50,315 L150,315 L150,200 L250,200"/>
+    <path d="M950,400 L1050,400 L1050,250 L1100,250"/>
+    <path d="M100,500 L200,500 L200,450 L300,450"/>
+    <circle cx="250" cy="200" r="5" fill="#00d4ff"/>
+    <circle cx="1100" cy="250" r="5" fill="#7b2ff7"/>
+    <circle cx="300" cy="450" r="5" fill="#00d4ff"/>
+  </g>
+  <!-- Chip icon -->
+  <g transform="translate(920, 80)" opacity="0.15">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="none" stroke="#00d4ff" stroke-width="2"/>
+    <rect x="15" y="15" width="50" height="50" rx="4" fill="none" stroke="#7b2ff7" stroke-width="1.5"/>
+    <line x1="0" y1="20" x2="-15" y2="20" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="0" y1="40" x2="-15" y2="40" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="0" y1="60" x2="-15" y2="60" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="80" y1="20" x2="95" y2="20" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="80" y1="40" x2="95" y2="40" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="80" y1="60" x2="95" y2="60" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="20" y1="0" x2="20" y2="-15" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="40" y1="0" x2="40" y2="-15" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="60" y1="0" x2="60" y2="-15" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="20" y1="80" x2="20" y2="95" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="40" y1="80" x2="40" y2="95" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="60" y1="80" x2="60" y2="95" stroke="#00d4ff" stroke-width="2"/>
+  </g>
+  <!-- Glow effect -->
+  <ellipse cx="600" cy="280" rx="500" ry="200" fill="url(#glow)" opacity="0.4"/>
+  <!-- Accent line -->
+  <rect x="60" y="170" width="5" height="80" rx="2" fill="url(#accent)"/>
+  <!-- Title -->
+  <text x="85" y="210" font-family="'SF Pro Display', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="52" font-weight="700" fill="#ffffff" letter-spacing="2">
+    每日科技新闻
+  </text>
+  <text x="85" y="250" font-family="'SF Pro Display', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="28" fill="#8899bb" letter-spacing="1">
+    Daily Tech News
+  </text>
+  <!-- Date -->
+  <rect x="85" y="280" width="260" height="36" rx="18" fill="url(#accent)" opacity="0.15"/>
+  <text x="95" y="305" font-family="'SF Pro Display', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#00d4ff" letter-spacing="1">
+    📅 2026 年 5 月 22 日 · 星期五
+  </text>
+  <!-- Topic tags -->
+  <g transform="translate(85, 340)">
+    <rect x="0" y="0" width="60" height="28" rx="14" fill="#00d4ff" opacity="0.12"/>
+    <text x="30" y="19" font-family="'SF Pro Display', sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">AI</text>
+    <rect x="70" y="0" width="72" height="28" rx="14" fill="#7b2ff7" opacity="0.12"/>
+    <text x="106" y="19" font-family="'SF Pro Display', 'PingFang SC', sans-serif" font-size="13" fill="#b388ff" text-anchor="middle">芯片</text>
+    <rect x="152" y="0" width="82" height="28" rx="14" fill="#00d4ff" opacity="0.12"/>
+    <text x="193" y="19" font-family="'SF Pro Display', 'PingFang SC', sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">半导体</text>
+    <rect x="244" y="0" width="72" height="28" rx="14" fill="#7b2ff7" opacity="0.12"/>
+    <text x="280" y="19" font-family="'SF Pro Display', 'PingFang SC', sans-serif" font-size="13" fill="#b388ff" text-anchor="middle">英伟达</text>
+  </g>
+  <!-- Bottom highlight bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="url(#accent)" opacity="0.08"/>
+  <text x="600" y="612" font-family="'SF Pro Display', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#556688" text-anchor="middle" letter-spacing="3">
+    POWERED BY 虾博 XiBo · AI × SEMICONDUCTOR × FUTURE
+  </text>
+  <!-- Decorative dots -->
+  <g opacity="0.2">
+    <circle cx="1100" cy="500" r="3" fill="#00d4ff"/>
+    <circle cx="1120" cy="480" r="2" fill="#7b2ff7"/>
+    <circle cx="1080" cy="520" r="2" fill="#00d4ff"/>
+    <circle cx="1140" cy="510" r="1.5" fill="#7b2ff7"/>
+    <circle cx="1060" cy="490" r="1.5" fill="#00d4ff"/>
+  </g>
+</svg>
