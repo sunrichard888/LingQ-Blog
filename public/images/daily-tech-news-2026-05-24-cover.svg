@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="50%" stop-color="#1a1f4e"/>
+      <stop offset="100%" stop-color="#0d1b3d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7b2cff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Circuit grid -->
+  <g stroke="#1e3a8a" stroke-width="0.5" opacity="0.4">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M100 0 V630 M300 0 V630 M500 0 V630 M700 0 V630 M900 0 V630 M1100 0 V630"/>
+  </g>
+
+  <!-- Glow orbs -->
+  <circle cx="950" cy="180" r="180" fill="url(#glow)"/>
+  <circle cx="200" cy="500" r="160" fill="url(#glow)" opacity="0.6"/>
+
+  <!-- Chip icon -->
+  <g transform="translate(900,250)">
+    <rect x="-80" y="-80" width="160" height="160" rx="12" fill="none" stroke="url(#accent)" stroke-width="3"/>
+    <rect x="-50" y="-50" width="100" height="100" rx="6" fill="#1a1f4e" stroke="#00d4ff" stroke-width="2"/>
+    <text x="0" y="8" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="32" font-weight="bold">AI</text>
+    <g stroke="#7b2cff" stroke-width="2">
+      <line x1="-80" y1="-40" x2="-110" y2="-40"/>
+      <line x1="-80" y1="0" x2="-110" y2="0"/>
+      <line x1="-80" y1="40" x2="-110" y2="40"/>
+      <line x1="80" y1="-40" x2="110" y2="-40"/>
+      <line x1="80" y1="0" x2="110" y2="0"/>
+      <line x1="80" y1="40" x2="110" y2="40"/>
+      <line x1="-40" y1="-80" x2="-40" y2="-110"/>
+      <line x1="0" y1="-80" x2="0" y2="-110"/>
+      <line x1="40" y1="-80" x2="40" y2="-110"/>
+      <line x1="-40" y1="80" x2="-40" y2="110"/>
+      <line x1="0" y1="80" x2="0" y2="110"/>
+      <line x1="40" y1="80" x2="40" y2="110"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="80" y="200" fill="#ffffff" font-family="-apple-system,'Helvetica Neue',sans-serif" font-size="68" font-weight="900">每日科技</text>
+  <text x="80" y="280" fill="url(#accent)" font-family="-apple-system,'Helvetica Neue',sans-serif" font-size="68" font-weight="900">DAILY TECH</text>
+
+  <!-- Date -->
+  <rect x="80" y="320" width="220" height="50" rx="25" fill="none" stroke="#00d4ff" stroke-width="2"/>
+  <text x="190" y="354" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="26" font-weight="bold">2026.05.24</text>
+
+  <!-- Tags -->
+  <g font-family="-apple-system,sans-serif" font-size="22" font-weight="600">
+    <text x="80" y="430" fill="#ffffff">🤖 AI · 🔬 半导体 · ⚛️ 量子 · 💰 资本</text>
+  </g>
+
+  <!-- Highlights -->
+  <g font-family="-apple-system,sans-serif" font-size="18" fill="#a0b4d0">
+    <text x="80" y="490">▸ Qualcomm 股价单日飙升 12%，AI 设备时代正式到来</text>
+    <text x="80" y="520">▸ DeepSeek V4-Pro 永久降价 75%，中国大模型价格战白热化</text>
+    <text x="80" y="550">▸ 美国联邦政府豪掷 20 亿美金押注量子计算</text>
+  </g>
+
+  <!-- Footer brand -->
+  <text x="80" y="600" fill="#4a6fa5" font-family="monospace" font-size="14">LingQ-Blog · 虾博 XiaBo · 20 条精选</text>
+  <text x="1120" y="600" text-anchor="end" fill="#4a6fa5" font-family="monospace" font-size="14">#TechNews #AI #Semiconductor</text>
+</svg>
