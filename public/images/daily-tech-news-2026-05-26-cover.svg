@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="50%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#2d1b4e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff3366"/>
+      <stop offset="50%" stop-color="#ff9933"/>
+      <stop offset="100%" stop-color="#ffcc33"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 90 H1200 M0 180 H1200 M0 270 H1200 M0 360 H1200 M0 450 H1200 M0 540 H1200"/>
+    <path d="M100 0 V630 M250 0 V630 M400 0 V630 M550 0 V630 M700 0 V630 M850 0 V630 M1000 0 V630 M1150 0 V630"/>
+  </g>
+  <!-- Decorative chip on right -->
+  <g transform="translate(900,180)" filter="url(#glow)">
+    <rect x="0" y="0" width="220" height="220" rx="22" fill="url(#chip)" opacity="0.85"/>
+    <rect x="30" y="30" width="160" height="160" rx="10" fill="#0a0e27" opacity="0.6"/>
+    <text x="110" y="125" text-anchor="middle" fill="#00ffaa" font-family="ui-monospace,Menlo,monospace" font-size="38" font-weight="800">Kirin</text>
+    <text x="110" y="160" text-anchor="middle" fill="#ffffff" font-family="ui-monospace,Menlo,monospace" font-size="20" opacity="0.85">τ-Scaling</text>
+    <!-- pins -->
+    <g fill="#00d4ff">
+      <rect x="-12" y="40" width="12" height="6"/><rect x="-12" y="60" width="12" height="6"/><rect x="-12" y="80" width="12" height="6"/><rect x="-12" y="100" width="12" height="6"/><rect x="-12" y="120" width="12" height="6"/><rect x="-12" y="140" width="12" height="6"/><rect x="-12" y="160" width="12" height="6"/><rect x="-12" y="180" width="12" height="6"/>
+      <rect x="220" y="40" width="12" height="6"/><rect x="220" y="60" width="12" height="6"/><rect x="220" y="80" width="12" height="6"/><rect x="220" y="100" width="12" height="6"/><rect x="220" y="120" width="12" height="6"/><rect x="220" y="140" width="12" height="6"/><rect x="220" y="160" width="12" height="6"/><rect x="220" y="180" width="12" height="6"/>
+    </g>
+  </g>
+  <!-- Date strip -->
+  <g transform="translate(70,80)">
+    <rect x="0" y="0" width="240" height="44" rx="22" fill="url(#accent)"/>
+    <text x="120" y="30" text-anchor="middle" fill="#0a0e27" font-family="ui-sans-serif,system-ui,Arial" font-size="22" font-weight="800">2026 · 05 · 26</text>
+  </g>
+  <!-- Title -->
+  <g transform="translate(70,170)">
+    <text x="0" y="0" fill="#ffffff" font-family="ui-sans-serif,system-ui,'PingFang SC',Arial" font-size="58" font-weight="900">每日科技</text>
+    <text x="0" y="70" fill="url(#accent)" font-family="ui-sans-serif,system-ui,'PingFang SC',Arial" font-size="46" font-weight="800">华为亮剑：τ Scaling Law</text>
+    <text x="0" y="125" fill="#cfd8ff" font-family="ui-sans-serif,system-ui,'PingFang SC',Arial" font-size="28" font-weight="500">2031 年对标 1.4nm · 国产半导体破局之路</text>
+  </g>
+  <!-- Tags -->
+  <g transform="translate(70,360)" font-family="ui-sans-serif,system-ui,Arial" font-size="20" font-weight="700">
+    <g><rect x="0" y="0" width="118" height="36" rx="18" fill="#ff3366" opacity="0.85"/><text x="59" y="24" text-anchor="middle" fill="#fff">华为</text></g>
+    <g transform="translate(130,0)"><rect x="0" y="0" width="118" height="36" rx="18" fill="#00d4ff" opacity="0.85"/><text x="59" y="24" text-anchor="middle" fill="#0a0e27">半导体</text></g>
+    <g transform="translate(260,0)"><rect x="0" y="0" width="118" height="36" rx="18" fill="#ffcc33" opacity="0.85"/><text x="59" y="24" text-anchor="middle" fill="#0a0e27">AI 芯片</text></g>
+    <g transform="translate(390,0)"><rect x="0" y="0" width="118" height="36" rx="18" fill="#a855f7" opacity="0.85"/><text x="59" y="24" text-anchor="middle" fill="#fff">DeepSeek</text></g>
+  </g>
+  <!-- Bottom bar -->
+  <g transform="translate(70,540)">
+    <text x="0" y="0" fill="#7a87b8" font-family="ui-monospace,Menlo,monospace" font-size="18">// daily-tech-news</text>
+    <text x="0" y="40" fill="#ffffff" font-family="ui-sans-serif,system-ui,Arial" font-size="22" font-weight="700">🦐 虾博 · LingQ Blog</text>
+  </g>
+  <!-- Accent line -->
+  <rect x="70" y="320" width="500" height="3" fill="url(#accent)"/>
+</svg>
