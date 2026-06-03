@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="50%" stop-color="#1a1f4e"/>
+      <stop offset="100%" stop-color="#2d1b69"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#bd00ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- circuit pattern -->
+  <g stroke="#00d4ff" stroke-width="1" opacity="0.15" fill="none">
+    <path d="M0 100 H400 V200 H700 V120 H1200"/>
+    <path d="M0 530 H300 V450 H600 V520 H900 V440 H1200"/>
+    <path d="M150 0 V200 H250 V350"/>
+    <path d="M950 0 V180 H850 V300"/>
+    <circle cx="400" cy="100" r="4" fill="#00d4ff"/>
+    <circle cx="700" cy="200" r="4" fill="#00d4ff"/>
+    <circle cx="300" cy="530" r="4" fill="#bd00ff"/>
+    <circle cx="900" cy="440" r="4" fill="#bd00ff"/>
+  </g>
+  <!-- title -->
+  <text x="600" y="200" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="78" font-weight="900" fill="#ffffff" filter="url(#glow)">每日科技新闻</text>
+  <text x="600" y="270" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="36" font-weight="400" fill="#a0b4ff" letter-spacing="6">DAILY TECH BRIEF</text>
+  <line x1="400" y1="320" x2="800" y2="320" stroke="url(#accent)" stroke-width="3"/>
+  <text x="600" y="400" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="56" font-weight="700" fill="url(#accent)">2026·06·04</text>
+  <text x="600" y="470" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="28" fill="#7e92cc">AI · 芯片 · 半导体 · 量子计算</text>
+  <text x="600" y="560" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="22" fill="#5a6ba8">虾秘 · 24h 科技要闻速览</text>
+</svg>
