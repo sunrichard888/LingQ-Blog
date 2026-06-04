@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.45" stop-color="#1f2a1d"/>
+      <stop offset="1" stop-color="#374151"/>
+    </linearGradient>
+    <radialGradient id="radar" cx="72%" cy="42%" r="45%">
+      <stop offset="0" stop-color="#84cc16" stop-opacity="0.35"/>
+      <stop offset="0.45" stop-color="#22c55e" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#radar)"/>
+  <g opacity="0.18" stroke="#d1d5db" stroke-width="1">
+    <path d="M0 120 H1200M0 240 H1200M0 360 H1200M0 480 H1200"/>
+    <path d="M120 0 V630M240 0 V630M360 0 V630M480 0 V630M600 0 V630M720 0 V630M840 0 V630M960 0 V630M1080 0 V630"/>
+  </g>
+  <g transform="translate(835 275)" opacity="0.55" fill="none" stroke="#a3e635" stroke-width="3">
+    <circle r="72"/><circle r="145"/><circle r="220"/>
+    <path d="M0 0 L205 -78" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-235 0 H235M0 -235 V235" opacity="0.65"/>
+  </g>
+  <g transform="translate(725 340)" fill="#111827" opacity="0.72">
+    <path d="M-310 55 L70 20 L190 80 L-245 105 Z"/>
+    <path d="M-230 42 L-185 -15 L-40 -8 L20 20 Z" fill="#1f2937"/>
+    <path d="M-5 -10 L220 -82 L232 -60 L35 22 Z" fill="#0f172a"/>
+    <circle cx="-190" cy="92" r="34" fill="#030712"/><circle cx="55" cy="72" r="34" fill="#030712"/>
+  </g>
+  <g filter="url(#soft)" opacity="0.5">
+    <circle cx="170" cy="500" r="120" fill="#22c55e"/>
+    <circle cx="1030" cy="120" r="120" fill="#f59e0b"/>
+  </g>
+  <text x="72" y="118" fill="#a3e635" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="28" font-weight="700" letter-spacing="4">DAILY MILITARY BRIEF</text>
+  <text x="72" y="205" fill="#ffffff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="64" font-weight="900">每日军事新闻</text>
+  <text x="72" y="268" fill="#e5e7eb" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="32" font-weight="600">2026-06-05 · 国防装备 / 无人系统 / 导弹防御</text>
+  <text x="72" y="352" fill="#cbd5e1" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="26">过去 24 小时全球防务动态速览</text>
+  <g transform="translate(72 430)">
+    <rect width="520" height="64" rx="14" fill="#111827" opacity="0.72"/>
+    <text x="28" y="42" fill="#fef3c7" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="24" font-weight="700">Ukraine · Golden Dome · Taiwan · Counter-UAS</text>
+  </g>
+</svg>
