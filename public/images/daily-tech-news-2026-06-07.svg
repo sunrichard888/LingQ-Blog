@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06111f"/>
+      <stop offset="0.52" stop-color="#172033"/>
+      <stop offset="1" stop-color="#3b1f12"/>
+    </linearGradient>
+    <radialGradient id="radar" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(910 315) rotate(90) scale(250)">
+      <stop offset="0" stop-color="#7dd3fc" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#38bdf8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#radar)"/>
+  <g opacity="0.16" stroke="#e5e7eb" stroke-width="1">
+    <path d="M0 105H1200M0 210H1200M0 315H1200M0 420H1200M0 525H1200"/>
+    <path d="M120 0V630M240 0V630M360 0V630M480 0V630M600 0V630M720 0V630M840 0V630M960 0V630M1080 0V630"/>
+  </g>
+  <g transform="translate(910 315)" opacity="0.75">
+    <circle r="205" stroke="#38bdf8" stroke-width="2" opacity="0.35"/>
+    <circle r="140" stroke="#38bdf8" stroke-width="2" opacity="0.3"/>
+    <circle r="72" stroke="#38bdf8" stroke-width="2" opacity="0.25"/>
+    <path d="M0 0 L155 -132" stroke="#7dd3fc" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+    <path d="M-205 0H205M0 -205V205" stroke="#38bdf8" stroke-width="1.5" opacity="0.28"/>
+  </g>
+  <g opacity="0.9" transform="translate(90 120)">
+    <text x="0" y="0" fill="#f8fafc" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="34" font-weight="700" letter-spacing="6">DAILY MILITARY BRIEF</text>
+    <text x="0" y="88" fill="#ffffff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="72" font-weight="900">每日军事新闻</text>
+    <text x="0" y="150" fill="#fbbf24" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="36" font-weight="800">2026.06.07 · 奇数天特刊</text>
+    <line x1="0" y1="188" x2="650" y2="188" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+    <text x="0" y="250" fill="#dbeafe" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="28" font-weight="600">AI 指挥 · 海上反潜 · 自主运输机 · 国防工业</text>
+    <text x="0" y="300" fill="#94a3b8" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="22">20 条全球军事与国防装备动态速览</text>
+  </g>
+  <g transform="translate(90 510)">
+    <rect x="0" y="0" width="260" height="46" rx="23" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.55"/>
+    <text x="28" y="31" fill="#7dd3fc" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="20" font-weight="700">XiaBo Intelligence</text>
+  </g>
+</svg>
