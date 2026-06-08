@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.48" stop-color="#18243a"/>
+      <stop offset="1" stop-color="#3b1f1f"/>
+    </linearGradient>
+    <radialGradient id="radar" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="930" cy="135" r="215" fill="url(#radar)"/>
+  <g opacity="0.28" stroke="#93c5fd" fill="none">
+    <circle cx="930" cy="135" r="55"/><circle cx="930" cy="135" r="105"/><circle cx="930" cy="135" r="155"/>
+    <path d="M930 135 L1100 80" stroke="#67e8f9" filter="url(#glow)"/>
+  </g>
+  <g opacity="0.16" stroke="#fff" stroke-width="1">
+    <path d="M0 500 C180 470 260 560 420 520 S720 430 910 475 1100 555 1200 510"/>
+    <path d="M0 535 C160 515 260 595 450 560 S745 470 960 520 1120 590 1200 550"/>
+  </g>
+  <g transform="translate(120 98)">
+    <rect x="0" y="0" width="190" height="42" rx="21" fill="#dc2626" opacity="0.92"/>
+    <text x="24" y="28" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="20" fill="white" font-weight="700">MILITARY DAILY</text>
+    <text x="0" y="132" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="68" fill="#f8fafc" font-weight="800">每日军事新闻</text>
+    <text x="0" y="190" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="32" fill="#cbd5e1">2026-06-09 · 过去 24 小时全球防务动态</text>
+    <line x1="0" y1="228" x2="780" y2="228" stroke="#38bdf8" stroke-width="4" opacity="0.75"/>
+    <text x="0" y="292" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="30" fill="#e2e8f0">反无人机 · 低空雷达 · 高速滑翔弹 · 核威慑</text>
+    <text x="0" y="342" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="30" fill="#e2e8f0">装备短板 · 国防工业链 · 舰船制造</text>
+  </g>
+  <g transform="translate(850 385)" opacity="0.9">
+    <path d="M0 70 L125 20 L240 70 L125 120 Z" fill="#1e293b" stroke="#94a3b8" stroke-width="3"/>
+    <path d="M125 20 L125 120" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="125" cy="70" r="24" fill="#0f172a" stroke="#22d3ee" stroke-width="4"/>
+  </g>
+</svg>
