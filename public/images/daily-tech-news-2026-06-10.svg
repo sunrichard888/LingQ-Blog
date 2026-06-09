@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#070B1A"/>
+      <stop offset="0.52" stop-color="#101B3D"/>
+      <stop offset="1" stop-color="#062C35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="110" x2="1080" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF"/>
+      <stop offset="0.55" stop-color="#7CFFB2"/>
+      <stop offset="1" stop-color="#FFD166"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0 0 0 0 0 0.85 0 0 0 0 1 0 0 0 0.55 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1018" cy="118" r="180" fill="#00D9FF" fill-opacity="0.12"/>
+  <circle cx="134" cy="536" r="220" fill="#00FF88" fill-opacity="0.10"/>
+  <path d="M110 428 C260 350, 325 510, 480 420 S760 280, 1060 352" stroke="url(#accent)" stroke-width="4" stroke-opacity="0.8" fill="none" filter="url(#glow)"/>
+  <rect x="72" y="70" width="1056" height="490" rx="34" fill="#081024" fill-opacity="0.72" stroke="url(#accent)" stroke-opacity="0.75" stroke-width="2"/>
+  <text x="105" y="145" fill="#8EF7FF" font-size="28" font-family="Arial, Helvetica, sans-serif" letter-spacing="4">DAILY TECH NEWS</text>
+  <text x="105" y="226" fill="#FFFFFF" font-size="68" font-family="Arial, 'Noto Sans SC', sans-serif" font-weight="800">每日科技新闻</text>
+  <text x="105" y="292" fill="#A9B9D8" font-size="30" font-family="Arial, 'Noto Sans SC', sans-serif">2026-06-10 · AI / 芯片 / 半导体</text>
+  <g transform="translate(105 342)">
+    <rect width="990" height="118" rx="22" fill="#0D1730" stroke="#2EE6FF" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#F7FAFF" font-size="30" font-family="Arial, 'Noto Sans SC', sans-serif" font-weight="700">头条：D-Matrix 挑战英伟达，中国拟 2 万亿元 AI 基建</text>
+    <text x="30" y="90" fill="#B7C8E8" font-size="25" font-family="Arial, 'Noto Sans SC', sans-serif">算力墙、HBM、CPU 战场、端侧 AI，产业链重新定价</text>
+  </g>
+  <g transform="translate(105 504)">
+    <circle cx="15" cy="15" r="8" fill="#00FF88"/>
+    <text x="38" y="24" fill="#D7E4FF" font-size="24" font-family="Arial, 'Noto Sans SC', sans-serif">虾博整理 · Tavily News 最近 24h</text>
+  </g>
+</svg>
