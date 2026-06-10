@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050711"/>
+      <stop offset="45%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#2a0f0f"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+    <radialGradient id="radar" cx="72%" cy="44%" r="45%">
+      <stop offset="0%" stop-color="#f9731638"/>
+      <stop offset="100%" stop-color="#f9731600"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#radar)"/>
+  <g stroke="#ffffff10" stroke-width="1">
+    <path d="M0 105H1200M0 210H1200M0 315H1200M0 420H1200M0 525H1200"/>
+    <path d="M200 0V630M400 0V630M600 0V630M800 0V630M1000 0V630"/>
+  </g>
+  <rect x="0" y="0" width="1200" height="7" fill="url(#hot)"/>
+  <g transform="translate(790 286)" opacity="0.85">
+    <circle r="62" fill="none" stroke="#f9731640" stroke-width="2"/>
+    <circle r="124" fill="none" stroke="#f9731630" stroke-width="2"/>
+    <circle r="186" fill="none" stroke="#f9731620" stroke-width="2"/>
+    <path d="M0 0 L152 -108 A186 186 0 0 1 180 48 Z" fill="#ef444414" stroke="#ef444455"/>
+    <line x1="0" y1="0" x2="152" y2="-108" stroke="#f9731680" stroke-dasharray="6 7"/>
+    <circle cx="118" cy="-74" r="5" fill="#facc15" filter="url(#glow)"/>
+    <circle cx="164" cy="20" r="4" fill="#ef4444" filter="url(#glow)"/>
+    <circle cx="80" cy="58" r="3" fill="#f97316" filter="url(#glow)"/>
+  </g>
+  <g transform="translate(115 150)" opacity="0.9">
+    <path d="M72 0 L144 34 V94 C144 158 102 205 72 222 C42 205 0 158 0 94 V34 Z" fill="#ef444414" stroke="#f9731688" stroke-width="3"/>
+    <path d="M72 44 V164M30 84 H114" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(940 135)" stroke="#f9731688" fill="none" stroke-width="3" opacity="0.75">
+    <rect x="35" y="42" width="96" height="20" rx="10" fill="#ef444420"/>
+    <path d="M50 42 L18 12M116 42 L150 12M50 62 L18 94M116 62 L150 94"/>
+    <circle cx="18" cy="12" r="18"/><circle cx="150" cy="12" r="18"/><circle cx="18" cy="94" r="18"/><circle cx="150" cy="94" r="18"/>
+  </g>
+  <text x="90" y="86" fill="#f97316" font-size="22" font-family="Arial, sans-serif" letter-spacing="4">DAILY MILITARY BRIEF</text>
+  <text x="90" y="285" fill="#ffffff" font-size="68" font-weight="800" font-family="Arial, sans-serif">每日军事新闻</text>
+  <text x="90" y="346" fill="#e5e7eb" font-size="34" font-family="Arial, sans-serif">无人化 · AI 决策 · 欧洲再武装</text>
+  <rect x="90" y="382" width="510" height="3" fill="url(#hot)"/>
+  <text x="90" y="455" fill="#cbd5e1" font-size="28" font-family="Arial, sans-serif">2026-06-11 · 奇数天军事分支</text>
+  <text x="90" y="512" fill="#94a3b8" font-size="22" font-family="Arial, sans-serif">Tavily News · Recent 24h · Top 20</text>
+  <g transform="translate(810 505)">
+    <rect x="0" y="0" width="290" height="54" rx="27" fill="#111827cc" stroke="#f9731666"/>
+    <text x="145" y="36" text-anchor="middle" fill="#facc15" font-size="24" font-weight="700" font-family="Arial, sans-serif">XiaBo Intelligence</text>
+  </g>
+</svg>
