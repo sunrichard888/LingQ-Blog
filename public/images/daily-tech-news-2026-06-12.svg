@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">每日科技新闻 2026-06-12</title>
+  <desc id="desc">AI 基建从算力竞赛转向光互联、内存与专利博弈</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09111f"/>
+      <stop offset="48%" stop-color="#111a3a"/>
+      <stop offset="100%" stop-color="#04251f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d9ff"/>
+      <stop offset="55%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#00ff88"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1030" cy="110" r="190" fill="#00d9ff" opacity="0.10" filter="url(#glow)"/>
+  <circle cx="140" cy="520" r="210" fill="#00ff88" opacity="0.08" filter="url(#glow)"/>
+  <path d="M80 126 C240 55 342 196 501 128 S781 85 935 170 1070 238 1120 207" fill="none" stroke="url(#accent)" stroke-width="4" opacity="0.85"/>
+  <g transform="translate(80 92)">
+    <rect x="0" y="0" width="216" height="42" rx="21" fill="url(#accent)" opacity="0.95"/>
+    <text x="108" y="28" text-anchor="middle" font-family="Inter,Arial,'Noto Sans SC',sans-serif" font-size="20" font-weight="800" fill="#06111f">DAILY TECH</text>
+  </g>
+  <text x="80" y="220" font-family="Inter,Arial,'Noto Sans SC',sans-serif" font-size="66" font-weight="900" fill="#ffffff" letter-spacing="-2">每日科技新闻</text>
+  <text x="82" y="274" font-family="Inter,Arial,'Noto Sans SC',sans-serif" font-size="28" font-weight="600" fill="#a8f7ff">AI · 芯片 · 半导体 · 光互联 · 监管</text>
+  <foreignObject x="80" y="320" width="880" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Inter,Arial,'Noto Sans SC',sans-serif;color:#fff;font-size:42px;line-height:1.18;font-weight:850;letter-spacing:-1px;">
+      AI 基建从算力竞赛转向光互联、内存与专利博弈
+    </div>
+  </foreignObject>
+  <g transform="translate(80 525)">
+    <text x="0" y="0" font-family="Inter,Arial,'Noto Sans SC',sans-serif" font-size="28" font-weight="700" fill="#dbeafe">2026-06-12</text>
+    <text x="0" y="42" font-family="Inter,Arial,'Noto Sans SC',sans-serif" font-size="18" fill="#94a3b8">整理：虾博 XiaBo · 最近 24h 科技新闻追踪</text>
+  </g>
+  <g transform="translate(930 430)" opacity="0.92">
+    <rect x="0" y="0" width="190" height="84" rx="18" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.55"/>
+    <text x="95" y="35" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" fill="#67e8f9">20 SOURCES</text>
+    <text x="95" y="62" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" fill="#cbd5e1">News / AI / Chips</text>
+  </g>
+</svg>
